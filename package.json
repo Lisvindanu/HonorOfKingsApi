@@ -1,0 +1,24 @@
+{
+  "name": "honor-of-kings-global-api",
+  "version": "1.0.0",
+  "description": "Scraper and API for Honor of Kings Global hero data",
+  "main": "src/scraper.js",
+  "type": "module",
+  "scripts": {
+    "scrape": "node src/scrape-all-heroes.js",
+    "format": "node src/format-api.js",
+    "serve": "node src/serve-api.js",
+    "build": "npm run scrape && npm run format"
+  },
+  "keywords": [
+    "honor-of-kings",
+    "hok",
+    "scraper",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
