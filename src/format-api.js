@@ -2,18 +2,18 @@ import fs from 'fs/promises';
 import path from 'path';
 
 /**
- * Transform scraped hero data to match reference API format
+ * Transform scraped sample hero data to match reference API format
  * Reference: https://qing762.is-a.dev/api/wangzhe
  */
 
-async function formatHeroData() {
-  console.log('📦 Loading scraped hero data...');
+async function formatSampleData() {
+  console.log('📦 Loading sample hero data...');
 
   const inputFile = path.join(process.cwd(), 'output', 'all-heroes-complete.json');
   const rawData = await fs.readFile(inputFile, 'utf-8');
   const heroesData = JSON.parse(rawData);
 
-  console.log(`✅ Loaded ${heroesData.length} heroes`);
+  console.log(`✅ Loaded ${heroesData.length} sample heroes`);
 
   const formattedData = {};
 
@@ -24,134 +24,151 @@ async function formatHeroData() {
     }
 
     const heroKey = hero.heroName;
+    const raw = hero.rawData;
 
-    // Format skills
+    // Format skills from strategyData.skill
     const skills = [];
-    if (hero.skills && Array.isArray(hero.skills)) {
-      for (const skill of hero.skills) {
-        skills.push({
-          skillName: skill.skillName || '',
-          cooldown: skill.cd || skill.cooldown || [0],
-          cost: skill.consume || skill.cost || [0],
-          skillDesc: skill.description || skill.skillDesc || '',
-          skillImg: skill.iconUrl || skill.skillIcon || skill.skillImg || ''
-        });
+    if (raw.strategyData?.skill) {
+      for (const skillGroup of raw.strategyData.skill) {
+        if (skillGroup.skillList) {
+          for (const skill of skillGroup.skillList) {
+            skills.push({
+              skillName: skill.skillName || '',
+              cooldown: skill.skillCd ? [skill.skillCd / 1000] : [0], // Convert ms to seconds
+              cost: [skill.skillCostList?.skillCost || 0],
+              skillDesc: skill.skillDesc ? skill.skillDesc.replace(/<[^>]*>/g, '') : '', // Remove HTML tags
+              skillImg: skill.skillIcon || ''
+            });
+          }
+        }
       }
     }
 
-    // Format skins
+    // Format skins from worldData.libraryList (images)
     const skins = [];
-    if (hero.skins && Array.isArray(hero.skins)) {
-      for (const skin of hero.skins) {
-        skins.push({
-          skinName: skin.skinName || skin.name || '',
-          skinImg: skin.mainImg || skin.skinImg || skin.image || ''
-        });
+    if (raw.worldData?.libraryList) {
+      for (const item of raw.worldData.libraryList) {
+        if (item.materialType === 1 && item.image) { // materialType 1 = images
+          const img = item.image;
+          skins.push({
+            skinName: img.title2 || img.title1 || '',
+            skinImg: img.oriPicUrl || img.image || ''
+          });
+        }
       }
     }
 
-    // Format relationships - best partners
+    // Format best partners from strategyData.combination
     const bestPartners = {};
-    if (hero.relationships && hero.relationships.bestPartner) {
-      for (const partner of hero.relationships.bestPartner) {
-        const partnerName = partner.heroName || partner.name;
-        if (partnerName) {
-          bestPartners[partnerName] = {
-            name: partnerName,
-            thumbnail: partner.icon || partner.heroIcon || '',
-            description: partner.tips || partner.description || '',
-            url: ''
-          };
+    if (raw.strategyData?.combination) {
+      for (const combo of raw.strategyData.combination) {
+        if (combo.combinationType === 2 && combo.heroCombination) { // Type 2 = team composition
+          for (const partner of combo.heroCombination) {
+            if (partner.heroId !== hero.heroId) { // Don't include self
+              bestPartners[partner.heroName] = {
+                name: partner.heroName,
+                thumbnail: partner.heroIcon || '',
+                description: combo.combinationDesc || '',
+                url: ''
+              };
+            }
+          }
         }
       }
     }
 
-    // Format relationships - suppressing heroes (yang kita kalahkan)
+    // Format suppressing heroes (heroes this hero is good against)
     const suppressingHeroes = {};
-    if (hero.relationships && hero.relationships.winOddsHero) {
-      for (const suppressed of hero.relationships.winOddsHero) {
-        const suppressedName = suppressed.heroName || suppressed.name;
-        if (suppressedName) {
-          suppressingHeroes[suppressedName] = {
-            name: suppressedName,
-            thumbnail: suppressed.icon || suppressed.heroIcon || '',
-            description: suppressed.tips || suppressed.description || '',
-            url: ''
-          };
+    if (raw.strategyData?.combination) {
+      for (const combo of raw.strategyData.combination) {
+        if (combo.combinationType === 1 && combo.heroCombination) { // Type 1 = counter picks
+          for (const target of combo.heroCombination) {
+            if (target.heroId !== hero.heroId) {
+              suppressingHeroes[target.heroName] = {
+                name: target.heroName,
+                thumbnail: target.heroIcon || '',
+                description: combo.combinationDesc || '',
+                url: ''
+              };
+            }
+          }
         }
       }
     }
 
-    // Format relationships - suppressed by heroes (yang mengalahkan kita)
+    // Format suppressed by heroes (heroes that counter this hero)
     const suppressedHeroes = {};
-    if (hero.relationships && hero.relationships.weakOddsHero) {
-      for (const suppressor of hero.relationships.weakOddsHero) {
-        const suppressorName = suppressor.heroName || suppressor.name;
-        if (suppressorName) {
-          suppressedHeroes[suppressorName] = {
-            name: suppressorName,
-            thumbnail: suppressor.icon || suppressor.heroIcon || '',
-            description: suppressor.tips || suppressor.description || '',
-            url: ''
-          };
+    if (raw.strategyData?.combination) {
+      for (const combo of raw.strategyData.combination) {
+        if (combo.combinationType === 3 && combo.heroCombination) { // Type 3 = countered by
+          for (const counter of combo.heroCombination) {
+            if (counter.heroId !== hero.heroId) {
+              suppressedHeroes[counter.heroName] = {
+                name: counter.heroName,
+                thumbnail: counter.heroIcon || '',
+                description: combo.combinationDesc || '',
+                url: ''
+              };
+            }
+          }
         }
       }
     }
 
-    // Format equipment/emblems
+    // Format equipment/emblems - Not available in Global version data
     const emblems = [];
-    if (hero.equipment && hero.equipment.inscriptionData) {
-      for (const emblem of hero.equipment.inscriptionData) {
-        emblems.push({
-          emblemName: emblem.inscriptionName || emblem.name || '',
-          emblemDescription: emblem.inscriptionEffect || emblem.description || '',
-          emblemImg: emblem.inscriptionIcon || emblem.icon || ''
-        });
-      }
-    }
+
+    // Get stats
+    const stats = raw.heroData?.baseData || {};
 
     formattedData[heroKey] = {
-      title: hero.cover || '',
+      title: hero.cover || hero.heroName,
       name: hero.heroName,
       heroId: hero.heroId,
       role: hero.mainJobName || '',
       lane: hero.recommendRoadName || '',
       icon: hero.icon || '',
       skill: skills,
-      survivalPercentage: formatPercentage(hero.survivalAbility),
-      attackPercentage: formatPercentage(hero.attackDamage),
-      abilityPercentage: formatPercentage(hero.skillEffect),
-      difficultyPercentage: formatPercentage(hero.difficulty),
+      survivalPercentage: '0%', // Not available in Global data
+      attackPercentage: '0%', // Not available in Global data
+      abilityPercentage: '0%', // Not available in Global data
+      difficultyPercentage: '0%', // Not available in Global data
       skins: skins,
       emblems: emblems,
-      emblemTips: hero.equipment?.inscriptionTips || '',
+      emblemTips: '',
       bestPartners: bestPartners,
       suppressingHeroes: suppressingHeroes,
       suppressedHeroes: suppressedHeroes,
       stats: {
-        winRate: hero.stats?.winRate || '',
-        pickRate: hero.stats?.matchRate || '',
-        banRate: hero.stats?.banRate || '',
-        tier: hero.stats?.hot || ''
+        winRate: stats.winRate || '',
+        pickRate: stats.matchRate || '',
+        banRate: stats.banRate || '',
+        tier: stats.hot || ''
+      },
+      world: {
+        region: raw.worldData?.world?.region || '',
+        identity: raw.worldData?.world?.identity || '',
+        energy: raw.worldData?.world?.energy || ''
       }
     };
 
     console.log(`  ✅ Formatted: ${heroKey}`);
+    console.log(`     - ${skills.length} skills`);
+    console.log(`     - ${skins.length} skins`);
+    console.log(`     - ${Object.keys(bestPartners).length} best partners`);
   }
 
   // Save formatted data
   const outputFile = path.join(process.cwd(), 'output', 'formatted-api.json');
   await fs.writeFile(outputFile, JSON.stringify({ main: formattedData }, null, 2));
 
-  console.log(`\n💾 Saved formatted data to: ${outputFile}`);
+  console.log(`\n💾 Saved formatted sample to: ${outputFile}`);
   console.log(`📊 Total heroes formatted: ${Object.keys(formattedData).length}`);
+
+  // Pretty print one hero as example
+  console.log('\n📄 Sample output:');
+  const firstHero = Object.values(formattedData)[0];
+  console.log(JSON.stringify({ [Object.keys(formattedData)[0]]: firstHero }, null, 2).substring(0, 1000) + '...');
 }
 
-function formatPercentage(value) {
-  if (!value) return '0%';
-  if (typeof value === 'string' && value.includes('%')) return value;
-  if (typeof value === 'number') return `${Math.round(value * 100)}%`;
-  return '0%';
-}
-
-formatHeroData().catch(console.error);
+formatSampleData().catch(console.error);

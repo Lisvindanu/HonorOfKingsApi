@@ -1,0 +1,38 @@
+[
+  {
+    "id": "skin-1771612377912",
+    "type": "skin",
+    "action": "approved",
+    "submittedAt": "2026-02-20T18:32:57.912Z",
+    "reviewedAt": "2026-02-20T18:33:06.478Z",
+    "data": {
+      "heroId": 112,
+      "heroName": "LUBAN NO.7",
+      "skin": {
+        "skinName": "Conan Edogawa",
+        "skinSeries": "DETECTIVE CONAN",
+        "skinTier": "Legendary",
+        "skinCover": "https://static.wikia.nocookie.net/honor-of-kings/images/c/c1/Luban_No.7_%28Conan_Edogawa%29.jpg/revision/latest/scale-to-width-down/1000?cb=20250813075324",
+        "skinImage": "https://static.wikia.nocookie.net/honor-of-kings/images/c/c1/Luban_No.7_%28Conan_Edogawa%29.jpg/revision/latest/scale-to-width-down/1000?cb=20250813075324"
+      }
+    }
+  },
+  {
+    "id": "skin-1771612047003",
+    "type": "skin",
+    "action": "approved",
+    "submittedAt": "2026-02-20T18:27:27.003Z",
+    "reviewedAt": "2026-02-20T18:30:53.271Z",
+    "data": {
+      "heroId": 132,
+      "heroName": "MARCO POLO",
+      "skin": {
+        "skinName": "Kid the Phantom Thief",
+        "skinSeries": "DETECTIVE CONAN",
+        "skinTier": "Legendary",
+        "skinCover": "https://static.wikia.nocookie.net/honor-of-kings/images/6/62/Marco_Polo_%28Kid_the_Phantom_Thief%29.jpg/revision/latest/scale-to-width-down/1000?cb=20250813075529",
+        "skinImage": "https://static.wikia.nocookie.net/honor-of-kings/images/6/62/Marco_Polo_%28Kid_the_Phantom_Thief%29.jpg/revision/latest/scale-to-width-down/1000?cb=20250813075529"
+      }
+    }
+  }
+]

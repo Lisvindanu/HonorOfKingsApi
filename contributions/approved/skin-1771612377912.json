@@ -1,0 +1,18 @@
+{
+  "type": "skin",
+  "data": {
+    "heroId": 112,
+    "heroName": "LUBAN NO.7",
+    "skin": {
+      "skinName": "Conan Edogawa",
+      "skinSeries": "DETECTIVE CONAN",
+      "skinTier": "Legendary",
+      "skinCover": "https://static.wikia.nocookie.net/honor-of-kings/images/c/c1/Luban_No.7_%28Conan_Edogawa%29.jpg/revision/latest/scale-to-width-down/1000?cb=20250813075324",
+      "skinImage": "https://static.wikia.nocookie.net/honor-of-kings/images/c/c1/Luban_No.7_%28Conan_Edogawa%29.jpg/revision/latest/scale-to-width-down/1000?cb=20250813075324"
+    }
+  },
+  "submittedAt": "2026-02-20T18:32:57.912Z",
+  "status": "approved",
+  "id": "skin-1771612377912",
+  "reviewedAt": "2026-02-20T18:33:06.473Z"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "skin",
+  "data": {
+    "heroId": 132,
+    "heroName": "MARCO POLO",
+    "skin": {
+      "skinName": "Test Contribution",
+      "skinSeries": "TEST SERIES",
+      "skinCover": "https://example.com/test.jpg"
+    }
+  },
+  "submittedAt": "2026-02-20T16:15:57.105Z",
+  "status": "pending",
+  "id": "skin-1771604157105"
+}
