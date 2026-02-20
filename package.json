@@ -19,6 +19,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.18.0",
     "puppeteer": "^22.0.0"
   }
 }

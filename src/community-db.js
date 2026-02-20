@@ -1,0 +1,436 @@
+import fs from 'fs/promises';
+import path from 'path';
+import pg from 'pg';
+const { Pool } = pg;
+
+// PostgreSQL connection
+const pool = new Pool({
+  user: 'postgres',
+  host: 'localhost',
+  database: 'hokhub',
+  password: 'password',
+  port: 5432,
+});
+
+// Test connection
+pool.query('SELECT NOW()', (err, res) => {
+  if (err) {
+    console.error('PostgreSQL connection error:', err);
+  } else {
+    console.log('PostgreSQL connected successfully');
+  }
+});
+
+// JSON storage for tier lists
+const DB_DIR = path.join(process.cwd(), 'community-data');
+const TIER_LISTS_FILE = path.join(DB_DIR, 'tier-lists.json');
+
+// Ensure tier lists directory exists
+async function ensureTierListsExists() {
+  try {
+    await fs.mkdir(DB_DIR, { recursive: true });
+
+    try {
+      await fs.access(TIER_LISTS_FILE);
+    } catch {
+      await fs.writeFile(TIER_LISTS_FILE, JSON.stringify([], null, 2));
+    }
+  } catch (error) {
+    console.error('Failed to initialize tier lists storage:', error);
+  }
+}
+
+// Generic read/write for tier lists
+async function readJSON(filePath) {
+  try {
+    const data = await fs.readFile(filePath, 'utf-8');
+    return JSON.parse(data);
+  } catch (error) {
+    console.error(`Failed to read ${filePath}:`, error);
+    return [];
+  }
+}
+
+async function writeJSON(filePath, data) {
+  try {
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+    return true;
+  } catch (error) {
+    console.error(`Failed to write ${filePath}:`, error);
+    return false;
+  }
+}
+
+// ============ TIER LISTS (JSON) ============
+export async function getAllTierLists() {
+  await ensureTierListsExists();
+  return await readJSON(TIER_LISTS_FILE);
+}
+
+export async function getTierListById(id) {
+  const tierLists = await getAllTierLists();
+  return tierLists.find(t => t.id === id);
+}
+
+export async function createTierList(tierListData) {
+  await ensureTierListsExists();
+  const tierLists = await getAllTierLists();
+
+  const newTierList = {
+    id: Date.now().toString(),
+    ...tierListData,
+    votes: 0,
+    votedBy: [],
+    createdAt: new Date().toISOString(),
+  };
+
+  tierLists.push(newTierList);
+  await writeJSON(TIER_LISTS_FILE, tierLists);
+
+  return newTierList;
+}
+
+export async function voteTierList(id, voterId) {
+  await ensureTierListsExists();
+  const tierLists = await getAllTierLists();
+  const tierList = tierLists.find(t => t.id === id);
+
+  if (!tierList) {
+    return { error: 'Tier list not found' };
+  }
+
+  const voterKey = voterId || 'anonymous';
+  if (tierList.votedBy.includes(voterKey)) {
+    return { error: 'Already voted' };
+  }
+
+  tierList.votes++;
+  tierList.votedBy.push(voterKey);
+
+  await writeJSON(TIER_LISTS_FILE, tierLists);
+
+  return tierList;
+}
+
+// ============ CONTRIBUTORS (PostgreSQL) ============
+export async function getAllContributors() {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM contributors ORDER BY (total_contributions * 5 + total_tier_lists * 10 + total_votes) DESC'
+    );
+    return result.rows.map(row => ({
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    }));
+  } catch (error) {
+    console.error('Failed to get contributors:', error);
+    return [];
+  }
+}
+
+export async function getContributorById(id) {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM contributors WHERE id = $1',
+      [parseInt(id)]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to get contributor by id:', error);
+    return null;
+  }
+}
+
+export async function getContributorByEmail(email) {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM contributors WHERE email = $1',
+      [email]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to get contributor by email:', error);
+    return null;
+  }
+}
+
+export async function createContributor(contributorData) {
+  try {
+    // Check if email already exists
+    if (contributorData.email) {
+      const existing = await getContributorByEmail(contributorData.email);
+      if (existing) {
+        return { error: 'Email already registered' };
+      }
+    }
+
+    const result = await pool.query(
+      'INSERT INTO contributors (name, email) VALUES ($1, $2) RETURNING *',
+      [contributorData.name, contributorData.email || null]
+    );
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to create contributor:', error);
+    return { error: 'Failed to create contributor' };
+  }
+}
+
+export async function updateContributorStats(id, updates) {
+  try {
+    const fields = [];
+    const values = [];
+    let paramCount = 1;
+
+    if (updates.totalTierLists !== undefined) {
+      fields.push(`total_tier_lists = $${paramCount++}`);
+      values.push(updates.totalTierLists);
+    }
+    if (updates.totalVotes !== undefined) {
+      fields.push(`total_votes = $${paramCount++}`);
+      values.push(updates.totalVotes);
+    }
+    if (updates.totalContributions !== undefined) {
+      fields.push(`total_contributions = $${paramCount++}`);
+      values.push(updates.totalContributions);
+    }
+
+    if (fields.length === 0) return null;
+
+    values.push(parseInt(id));
+
+    const result = await pool.query(
+      `UPDATE contributors SET ${fields.join(', ')} WHERE id = $${paramCount} RETURNING *`,
+      values
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to update contributor stats:', error);
+    return null;
+  }
+}
+
+export async function incrementContributorTierLists(id) {
+  try {
+    const result = await pool.query(
+      'UPDATE contributors SET total_tier_lists = total_tier_lists + 1 WHERE id = $1 RETURNING *',
+      [parseInt(id)]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to increment tier lists:', error);
+    return null;
+  }
+}
+
+export async function incrementContributorVotes(id) {
+  try {
+    const result = await pool.query(
+      'UPDATE contributors SET total_votes = total_votes + 1 WHERE id = $1 RETURNING *',
+      [parseInt(id)]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to increment votes:', error);
+    return null;
+  }
+}
+
+export async function incrementContributorContributions(id) {
+  try {
+    const result = await pool.query(
+      'UPDATE contributors SET total_contributions = total_contributions + 1 WHERE id = $1 RETURNING *',
+      [parseInt(id)]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to increment contributions:', error);
+    return null;
+  }
+}
+
+// ============ CONTRIBUTIONS (PostgreSQL) ============
+export async function createContribution(contributionData) {
+  try {
+    const result = await pool.query(
+      'INSERT INTO contributions (contributor_id, type, data, status) VALUES ($1, $2, $3, $4) RETURNING *',
+      [
+        contributionData.contributorId ? parseInt(contributionData.contributorId) : null,
+        contributionData.type,
+        JSON.stringify(contributionData.data),
+        contributionData.status || 'pending'
+      ]
+    );
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      contributorId: row.contributor_id?.toString(),
+      type: row.type,
+      data: row.data,
+      status: row.status,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to create contribution:', error);
+    return { error: 'Failed to create contribution' };
+  }
+}
+
+export async function getPendingContributions() {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM contributions WHERE status = $1 ORDER BY created_at DESC',
+      ['pending']
+    );
+
+    return result.rows.map(row => ({
+      id: row.id.toString(),
+      contributorId: row.contributor_id?.toString(),
+      type: row.type,
+      data: row.data,
+      status: row.status,
+      createdAt: row.created_at,
+    }));
+  } catch (error) {
+    console.error('Failed to get pending contributions:', error);
+    return [];
+  }
+}
+
+export async function approveContribution(id) {
+  try {
+    const result = await pool.query(
+      'UPDATE contributions SET status = $1 WHERE id = $2 RETURNING *',
+      ['approved', parseInt(id)]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      contributorId: row.contributor_id?.toString(),
+      type: row.type,
+      data: row.data,
+      status: row.status,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to approve contribution:', error);
+    return null;
+  }
+}
+
+export async function rejectContribution(id) {
+  try {
+    const result = await pool.query(
+      'UPDATE contributions SET status = $1 WHERE id = $2 RETURNING *',
+      ['rejected', parseInt(id)]
+    );
+
+    if (result.rows.length === 0) return null;
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      contributorId: row.contributor_id?.toString(),
+      type: row.type,
+      data: row.data,
+      status: row.status,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to reject contribution:', error);
+    return null;
+  }
+}
+
+// Initialize tier lists storage
+ensureTierListsExists();

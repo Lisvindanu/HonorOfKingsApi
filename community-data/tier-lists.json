@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1771631004757",
+    "title": "Test Tier List",
+    "creatorName": "Test User",
+    "creatorId": "1",
+    "tiers": {
+      "S": [
+        "Arthur",
+        "Diaochan"
+      ],
+      "A": [
+        "Luban"
+      ],
+      "B": []
+    },
+    "votes": 1,
+    "votedBy": [
+      "1"
+    ],
+    "createdAt": "2026-02-20T23:43:24.757Z"
+  }
+]

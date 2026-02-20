@@ -4,6 +4,7 @@ import path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import emailService from './email-service.js';
+import { handleCommunityRoutes } from "./community-routes.js";
 
 const execPromise = promisify(exec);
 const PORT = process.env.PORT || 8090;
@@ -255,22 +256,17 @@ async function handler(req, res) {
     res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
   }
 
+  // Try community routes
+  else if (await handleCommunityRoutes(req, res)) {
+    return;
+  }
+
   // Not found
   else {
     res.writeHead(404);
     res.end(JSON.stringify({
       error: 'Not found',
-      endpoints: [
-        'GET / - Main API',
-        'GET /api/hok - Main API',
-        'POST /api/contribute - Submit contribution',
-        'GET /api/contributions/pending - List pending',
-        'POST /api/contributions/approve/:id - Approve (requires auth)',
-        'POST /api/contributions/reject/:id - Reject (requires auth)',
-        'GET /api/contributions/history - View history',
-        'POST /api/admin/login - Admin login',
-        'GET /health - Health check'
-      ]
+      endpoints: [        'GET / - Main API',        'GET /api/hok - Main API',        'POST /api/contribute - Submit contribution',        'GET /api/contributions/pending - List pending',        'POST /api/contributions/approve/:id - Approve (requires auth)',        'POST /api/contributions/reject/:id - Reject (requires auth)',        'GET /api/contributions/history - View history',        'POST /api/admin/login - Admin login',        'POST /api/auth/register - Register contributor',        'POST /api/auth/login - Login contributor',        'GET /api/tier-lists - Get tier lists',        'POST /api/tier-lists - Create tier list',        'POST /api/tier-lists/:id/vote - Vote tier list',        'GET /api/contributors - Get contributors leaderboard',        'GET /health - Health check'      ]
     }));
   }
 }
