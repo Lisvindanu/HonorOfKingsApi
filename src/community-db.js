@@ -475,3 +475,106 @@ export async function rejectContribution(id) {
 
 // Initialize tier lists storage
 ensureTierListsExists();
+// Update contributor profile (name, email)
+export async function updateContributorProfile(id, updates) {
+  try {
+    const { name, email } = updates;
+    const fields = [];
+    const values = [];
+    let paramCount = 1;
+
+    if (name !== undefined) {
+      fields.push(`name = \$${paramCount++}`);
+      values.push(name);
+    }
+
+    if (email !== undefined) {
+      // Check if email already exists for another user
+      const existing = await getContributorByEmail(email);
+      if (existing && existing.id !== id) {
+        return { error: 'Email already in use' };
+      }
+      fields.push(`email = \$${paramCount++}`);
+      values.push(email);
+    }
+
+    if (fields.length === 0) {
+      return { error: 'No fields to update' };
+    }
+
+    values.push(parseInt(id));
+    const query = `UPDATE contributors SET ${fields.join(', ')} WHERE id = \$${paramCount} RETURNING *`;
+
+    const result = await pool.query(query, values);
+
+    if (result.rows.length === 0) {
+      return { error: 'Contributor not found' };
+    }
+
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      totalContributions: row.total_contributions || 0,
+      totalTierLists: row.total_tier_lists || 0,
+      totalVotes: row.total_votes || 0,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to update contributor profile:', error);
+    return { error: 'Database error' };
+  }
+}
+
+// Update contributor password
+export async function updateContributorPassword(id, currentPassword, newPassword) {
+  try {
+    const contributor = await getContributorById(id);
+    if (!contributor) {
+      return { error: 'Contributor not found' };
+    }
+
+    // Verify current password
+    const isValid = await bcrypt.compare(currentPassword, contributor.passwordHash);
+    if (!isValid) {
+      return { error: 'Current password is incorrect' };
+    }
+
+    // Hash new password
+    const newPasswordHash = await bcrypt.hash(newPassword, SALT_ROUNDS);
+
+    // Update password
+    await pool.query(
+      'UPDATE contributors SET password_hash = $1 WHERE id = $2',
+      [newPasswordHash, parseInt(id)]
+    );
+
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to update password:', error);
+    return { error: 'Database error' };
+  }
+}
+
+// Get contributions by contributor ID
+export async function getContributionsByContributorId(contributorId) {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM contributions WHERE contributor_id = $1 ORDER BY created_at DESC',
+      [parseInt(contributorId)]
+    );
+
+    return result.rows.map(row => ({
+      id: row.id.toString(),
+      contributorId: row.contributor_id?.toString(),
+      type: row.type,
+      data: row.data,
+      status: row.status,
+      createdAt: row.created_at,
+    }));
+  } catch (error) {
+    console.error('Failed to get contributions by contributor:', error);
+    return [];
+  }
+}

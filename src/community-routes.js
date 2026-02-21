@@ -228,6 +228,176 @@ export async function handleCommunityRoutes(req, res) {
     }
   }
 
+  // USER PROFILE ROUTES (Protected)
+  // Get current user profile
+  if (pathname === '/api/user/profile' && req.method === 'GET') {
+    try {
+      const { verifyToken } = await import('./auth-middleware.js');
+      const authHeader = req.headers.authorization;
+
+      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Unauthorized' }));
+        return true;
+      }
+
+      const token = authHeader.split(' ')[1];
+      const decoded = verifyToken(token);
+
+      if (!decoded) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Invalid token' }));
+        return true;
+      }
+
+      const contributor = await db.getContributorById(decoded.userId);
+
+      if (!contributor) {
+        res.writeHead(404);
+        res.end(JSON.stringify({ error: 'User not found' }));
+        return true;
+      }
+
+      // Don't send password hash
+      const { passwordHash, ...userData } = contributor;
+
+      res.writeHead(200);
+      res.end(JSON.stringify(userData));
+      return true;
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Failed to fetch profile' }));
+      return true;
+    }
+  }
+
+  // Update user profile
+  if (pathname === '/api/user/profile' && req.method === 'PUT') {
+    try {
+      const { verifyToken } = await import('./auth-middleware.js');
+      const authHeader = req.headers.authorization;
+
+      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Unauthorized' }));
+        return true;
+      }
+
+      const token = authHeader.split(' ')[1];
+      const decoded = verifyToken(token);
+
+      if (!decoded) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Invalid token' }));
+        return true;
+      }
+
+      const { name, email } = await parseBody(req);
+
+      const result = await db.updateContributorProfile(decoded.userId, { name, email });
+
+      if (result.error) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ error: result.error }));
+        return true;
+      }
+
+      res.writeHead(200);
+      res.end(JSON.stringify(result));
+      return true;
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Failed to update profile' }));
+      return true;
+    }
+  }
+
+  // Change password
+  if (pathname === '/api/user/password' && req.method === 'PUT') {
+    try {
+      const { verifyToken } = await import('./auth-middleware.js');
+      const authHeader = req.headers.authorization;
+
+      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Unauthorized' }));
+        return true;
+      }
+
+      const token = authHeader.split(' ')[1];
+      const decoded = verifyToken(token);
+
+      if (!decoded) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Invalid token' }));
+        return true;
+      }
+
+      const { currentPassword, newPassword } = await parseBody(req);
+
+      if (!currentPassword || !newPassword) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ error: 'Current and new password required' }));
+        return true;
+      }
+
+      if (newPassword.length < 6) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ error: 'New password must be at least 6 characters' }));
+        return true;
+      }
+
+      const result = await db.updateContributorPassword(decoded.userId, currentPassword, newPassword);
+
+      if (result.error) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ error: result.error }));
+        return true;
+      }
+
+      res.writeHead(200);
+      res.end(JSON.stringify({ message: 'Password updated successfully' }));
+      return true;
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Failed to update password' }));
+      return true;
+    }
+  }
+
+  // Get user contributions
+  if (pathname === '/api/user/contributions' && req.method === 'GET') {
+    try {
+      const { verifyToken } = await import('./auth-middleware.js');
+      const authHeader = req.headers.authorization;
+
+      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Unauthorized' }));
+        return true;
+      }
+
+      const token = authHeader.split(' ')[1];
+      const decoded = verifyToken(token);
+
+      if (!decoded) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Invalid token' }));
+        return true;
+      }
+
+      const contributions = await db.getContributionsByContributorId(decoded.userId);
+
+      res.writeHead(200);
+      res.end(JSON.stringify({ contributions }));
+      return true;
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Failed to fetch contributions' }));
+      return true;
+    }
+  }
+
   // Route not handled
   return false;
 }
