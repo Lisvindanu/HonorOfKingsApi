@@ -1,7 +1,10 @@
 import fs from 'fs/promises';
 import path from 'path';
 import pg from 'pg';
+import bcrypt from 'bcrypt';
 const { Pool } = pg;
+
+const SALT_ROUNDS = 10;
 
 // PostgreSQL connection
 const pool = new Pool({
@@ -116,7 +119,7 @@ export async function voteTierList(id, voterId) {
 export async function getAllContributors() {
   try {
     const result = await pool.query(
-      'SELECT * FROM contributors ORDER BY (total_contributions * 5 + total_tier_lists * 10 + total_votes) DESC'
+      'SELECT id, name, email, total_contributions, total_tier_lists, total_votes, created_at FROM contributors ORDER BY (total_contributions * 5 + total_tier_lists * 10 + total_votes) DESC'
     );
     return result.rows.map(row => ({
       id: row.id.toString(),
@@ -136,7 +139,7 @@ export async function getAllContributors() {
 export async function getContributorById(id) {
   try {
     const result = await pool.query(
-      'SELECT * FROM contributors WHERE id = $1',
+      'SELECT id, name, email, total_contributions, total_tier_lists, total_votes, created_at FROM contributors WHERE id = $1',
       [parseInt(id)]
     );
 
@@ -172,6 +175,7 @@ export async function getContributorByEmail(email) {
       id: row.id.toString(),
       name: row.name,
       email: row.email,
+      passwordHash: row.password_hash,
       totalContributions: row.total_contributions,
       totalTierLists: row.total_tier_lists,
       totalVotes: row.total_votes,
@@ -186,16 +190,25 @@ export async function getContributorByEmail(email) {
 export async function createContributor(contributorData) {
   try {
     // Check if email already exists
-    if (contributorData.email) {
-      const existing = await getContributorByEmail(contributorData.email);
-      if (existing) {
-        return { error: 'Email already registered' };
-      }
+    if (!contributorData.email) {
+      return { error: 'Email is required' };
     }
 
+    if (!contributorData.password) {
+      return { error: 'Password is required' };
+    }
+
+    const existing = await getContributorByEmail(contributorData.email);
+    if (existing) {
+      return { error: 'Email already registered' };
+    }
+
+    // Hash password
+    const passwordHash = await bcrypt.hash(contributorData.password, SALT_ROUNDS);
+
     const result = await pool.query(
-      'INSERT INTO contributors (name, email) VALUES ($1, $2) RETURNING *',
-      [contributorData.name, contributorData.email || null]
+      'INSERT INTO contributors (name, email, password_hash) VALUES ($1, $2, $3) RETURNING *',
+      [contributorData.name, contributorData.email, passwordHash]
     );
 
     const row = result.rows[0];
@@ -211,6 +224,34 @@ export async function createContributor(contributorData) {
   } catch (error) {
     console.error('Failed to create contributor:', error);
     return { error: 'Failed to create contributor' };
+  }
+}
+
+export async function verifyContributorPassword(email, password) {
+  try {
+    const contributor = await getContributorByEmail(email);
+    if (!contributor || !contributor.passwordHash) {
+      return null;
+    }
+
+    const isValid = await bcrypt.compare(password, contributor.passwordHash);
+    if (!isValid) {
+      return null;
+    }
+
+    // Return contributor without password hash
+    return {
+      id: contributor.id,
+      name: contributor.name,
+      email: contributor.email,
+      totalContributions: contributor.totalContributions,
+      totalTierLists: contributor.totalTierLists,
+      totalVotes: contributor.totalVotes,
+      createdAt: contributor.createdAt,
+    };
+  } catch (error) {
+    console.error('Failed to verify password:', error);
+    return null;
   }
 }
 

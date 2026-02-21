@@ -24,7 +24,7 @@ export async function handleCommunityRoutes(req, res) {
   // AUTH ROUTES
   if (pathname === '/api/auth/register' && req.method === 'POST') {
     try {
-      const { name, email, password } = await parseBody(req);
+      const { name, email } = await parseBody(req);
 
       if (!name || name.trim().length === 0) {
         res.writeHead(400);
@@ -32,23 +32,7 @@ export async function handleCommunityRoutes(req, res) {
         return true;
       }
 
-      if (!email || email.trim().length === 0) {
-        res.writeHead(400);
-        res.end(JSON.stringify({ error: 'Email is required' }));
-        return true;
-      }
-
-      if (!password || password.length < 6) {
-        res.writeHead(400);
-        res.end(JSON.stringify({ error: 'Password must be at least 6 characters' }));
-        return true;
-      }
-
-      const result = await db.createContributor({
-        name: name.trim(),
-        email: email.trim(),
-        password
-      });
+      const result = await db.createContributor({ name: name.trim(), email });
 
       if (result.error) {
         res.writeHead(400);
@@ -65,7 +49,6 @@ export async function handleCommunityRoutes(req, res) {
       }));
       return true;
     } catch (error) {
-      console.error('Register error:', error);
       res.writeHead(500);
       res.end(JSON.stringify({ error: 'Failed to register contributor' }));
       return true;
@@ -74,19 +57,19 @@ export async function handleCommunityRoutes(req, res) {
 
   if (pathname === '/api/auth/login' && req.method === 'POST') {
     try {
-      const { email, password } = await parseBody(req);
+      const { email } = await parseBody(req);
 
-      if (!email || !password) {
+      if (!email) {
         res.writeHead(400);
-        res.end(JSON.stringify({ error: 'Email and password are required' }));
+        res.end(JSON.stringify({ error: 'Email is required' }));
         return true;
       }
 
-      const contributor = await db.verifyContributorPassword(email.trim(), password);
+      const contributor = await db.getContributorByEmail(email);
 
       if (!contributor) {
-        res.writeHead(401);
-        res.end(JSON.stringify({ error: 'Invalid email or password' }));
+        res.writeHead(404);
+        res.end(JSON.stringify({ error: 'Contributor not found' }));
         return true;
       }
 
@@ -99,7 +82,6 @@ export async function handleCommunityRoutes(req, res) {
       }));
       return true;
     } catch (error) {
-      console.error('Login error:', error);
       res.writeHead(500);
       res.end(JSON.stringify({ error: 'Failed to login' }));
       return true;
