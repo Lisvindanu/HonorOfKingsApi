@@ -578,3 +578,10 @@ export async function getContributionsByContributorId(contributorId) {
     return [];
   }
 }
+
+// Get tier lists by contributor name
+export async function getTierListsByContributor(contributorName) {
+  await ensureTierListsExists();
+  const tierLists = await getAllTierLists();
+  return tierLists.filter(t => t.creatorName === contributorName);
+}

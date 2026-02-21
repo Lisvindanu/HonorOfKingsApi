@@ -398,6 +398,39 @@ export async function handleCommunityRoutes(req, res) {
     }
   }
 
+  // Get user tier lists
+  if (pathname === '/api/user/tier-lists' && req.method === 'GET') {
+    try {
+      const { verifyToken } = await import('./auth-middleware.js');
+      const authHeader = req.headers.authorization;
+
+      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Unauthorized' }));
+        return true;
+      }
+
+      const token = authHeader.split(' ')[1];
+      const decoded = verifyToken(token);
+
+      if (!decoded) {
+        res.writeHead(401);
+        res.end(JSON.stringify({ error: 'Invalid token' }));
+        return true;
+      }
+
+      const tierLists = await db.getTierListsByContributor(decoded.name);
+
+      res.writeHead(200);
+      res.end(JSON.stringify({ tierLists }));
+      return true;
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Failed to fetch tier lists' }));
+      return true;
+    }
+  }
+
   // Route not handled
   return false;
 }
