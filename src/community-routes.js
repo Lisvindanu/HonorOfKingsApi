@@ -228,6 +228,45 @@ export async function handleCommunityRoutes(req, res) {
     }
   }
 
+  // Get contributions for a specific contributor (public endpoint)
+  const contributorMatch = pathname.match(/^\/api\/contributors\/(\d+)\/contributions$/);
+  if (contributorMatch && req.method === 'GET') {
+    try {
+      const contributorId = contributorMatch[1];
+      const contributions = await db.getContributionsByContributorId(contributorId);
+      const contributor = await db.getContributorById(contributorId);
+      
+      if (!contributor) {
+        res.writeHead(404);
+        res.end(JSON.stringify({ error: 'Contributor not found' }));
+        return true;
+      }
+
+      // Also get tier lists for this contributor
+      const tierLists = await db.getTierListsByCreatorId(contributorId);
+
+      res.writeHead(200);
+      res.end(JSON.stringify({ 
+        contributor: {
+          id: contributor.id,
+          name: contributor.name,
+          totalContributions: contributor.totalContributions,
+          totalTierLists: contributor.totalTierLists,
+          totalVotes: contributor.totalVotes,
+          createdAt: contributor.createdAt
+        },
+        contributions,
+        tierLists: tierLists || []
+      }));
+      return true;
+    } catch (error) {
+      console.error('Failed to fetch contributor contributions:', error);
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Failed to fetch contributions' }));
+      return true;
+    }
+  }
+
   // USER PROFILE ROUTES (Protected)
   // Get current user profile
   if (pathname === '/api/user/profile' && req.method === 'GET') {

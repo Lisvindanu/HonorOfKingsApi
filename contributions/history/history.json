@@ -1,5 +1,95 @@
 [
   {
+    "id": "counter-1771706317811",
+    "type": "counter",
+    "action": "rejected",
+    "submittedAt": "2026-02-21T20:38:37.811Z",
+    "reviewedAt": "2026-02-21T21:11:58.566Z",
+    "data": {
+      "heroName": "CHICHA",
+      "action": "remove",
+      "relationshipType": "weakAgainst",
+      "targetHeroName": "DUN",
+      "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20231113/16998611165120.jpeg",
+      "description": ""
+    }
+  },
+  {
+    "id": "counter-1771706317817",
+    "type": "counter",
+    "action": "approved",
+    "submittedAt": "2026-02-21T20:38:37.817Z",
+    "reviewedAt": "2026-02-21T21:02:55.714Z",
+    "data": {
+      "heroName": "CHICHA",
+      "action": "remove",
+      "relationshipType": "weakAgainst",
+      "targetHeroName": "NEZHA",
+      "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20240529/17169519948178.jpeg",
+      "description": ""
+    }
+  },
+  {
+    "id": "counter-1771707753343",
+    "type": "counter",
+    "action": "approved",
+    "submittedAt": "2026-02-21T21:02:33.343Z",
+    "reviewedAt": "2026-02-21T21:02:50.372Z",
+    "data": {
+      "heroName": "LAPULAPU",
+      "action": "add",
+      "relationshipType": "weakAgainst",
+      "targetHeroName": "AO'YIN",
+      "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20240702/17199033998089.jpg",
+      "description": ""
+    }
+  },
+  {
+    "id": "counter-1771707371989",
+    "type": "counter",
+    "action": "approved",
+    "submittedAt": "2026-02-21T20:56:11.990Z",
+    "reviewedAt": "2026-02-21T20:56:32.128Z",
+    "data": {
+      "heroName": "FLOWBORN",
+      "action": "add",
+      "relationshipType": "weakAgainst",
+      "targetHeroName": "JING",
+      "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20221206/16703179459568.jpg",
+      "description": ""
+    }
+  },
+  {
+    "id": "counter-1771706243000",
+    "type": "counter",
+    "action": "approved",
+    "submittedAt": "2026-02-21T20:37:23.000Z",
+    "reviewedAt": "2026-02-21T20:37:52.437Z",
+    "data": {
+      "heroName": "CHICHA",
+      "action": "add",
+      "relationshipType": "weakAgainst",
+      "targetHeroName": "NEZHA",
+      "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20240529/17169519948178.jpeg",
+      "description": ""
+    }
+  },
+  {
+    "id": "counter-1771706243059",
+    "type": "counter",
+    "action": "approved",
+    "submittedAt": "2026-02-21T20:37:23.059Z",
+    "reviewedAt": "2026-02-21T20:37:47.002Z",
+    "data": {
+      "heroName": "CHICHA",
+      "action": "add",
+      "relationshipType": "weakAgainst",
+      "targetHeroName": "DUN",
+      "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20231113/16998611165120.jpeg",
+      "description": ""
+    }
+  },
+  {
     "id": "skin-1771612377912",
     "type": "skin",
     "action": "approved",

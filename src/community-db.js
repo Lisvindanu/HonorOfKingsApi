@@ -585,3 +585,67 @@ export async function getTierListsByContributor(contributorName) {
   const tierLists = await getAllTierLists();
   return tierLists.filter(t => t.creatorName === contributorName);
 }
+
+// Get tier lists by creator ID
+export async function getTierListsByCreatorId(creatorId) {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM tier_lists WHERE creator_id = $1 ORDER BY created_at DESC',
+      [parseInt(creatorId)]
+    );
+
+    return result.rows.map(row => ({
+      id: row.id.toString(),
+      title: row.title,
+      creatorName: row.creator_name,
+      tiers: row.tiers,
+      votes: row.votes || 0,
+      votedBy: row.voted_by || [],
+      createdAt: row.created_at,
+    }));
+  } catch (error) {
+    console.error('Failed to get tier lists by creator:', error);
+    return [];
+  }
+}
+
+// Update contribution status by matching data
+export async function updateContributionStatusByData(contributorId, contributionData, newStatus) {
+  try {
+    // For counter type, match by heroName and targetHeroName
+    if (contributionData.heroName && contributionData.targetHeroName) {
+      const result = await pool.query(
+        `UPDATE contributions 
+         SET status = $1 
+         WHERE contributor_id = $2 
+         AND data->>'heroName' = $3 
+         AND data->>'targetHeroName' = $4
+         AND status = 'pending'
+         RETURNING *`,
+        [newStatus, parseInt(contributorId), contributionData.heroName, contributionData.targetHeroName]
+      );
+      
+      if (result.rows.length > 0) {
+        console.log(`Updated contribution status to ${newStatus} for heroName=${contributionData.heroName}, targetHeroName=${contributionData.targetHeroName}`);
+        return result.rows[0];
+      }
+    }
+    
+    // For other types, try matching by full data
+    const result = await pool.query(
+      `UPDATE contributions 
+       SET status = $1 
+       WHERE contributor_id = $2 
+       AND status = 'pending'
+       ORDER BY created_at DESC
+       LIMIT 1
+       RETURNING *`,
+      [newStatus, parseInt(contributorId)]
+    );
+    
+    return result.rows[0] || null;
+  } catch (error) {
+    console.error('Failed to update contribution status:', error);
+    return null;
+  }
+}

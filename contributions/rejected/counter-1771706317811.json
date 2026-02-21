@@ -1,0 +1,17 @@
+{
+  "type": "counter",
+  "contributorName": "Anonymous",
+  "contributorEmail": "",
+  "data": {
+    "heroName": "CHICHA",
+    "action": "remove",
+    "relationshipType": "weakAgainst",
+    "targetHeroName": "DUN",
+    "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20231113/16998611165120.jpeg",
+    "description": ""
+  },
+  "submittedAt": "2026-02-21T20:38:37.811Z",
+  "status": "rejected",
+  "id": "counter-1771706317811",
+  "reviewedAt": "2026-02-21T21:11:58.563Z"
+}

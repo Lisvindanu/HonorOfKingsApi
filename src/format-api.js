@@ -2,18 +2,17 @@ import fs from 'fs/promises';
 import path from 'path';
 
 /**
- * Transform scraped sample hero data to match reference API format
- * Reference: https://qing762.is-a.dev/api/wangzhe
+ * Transform scraped hero data to match reference API format
  */
 
 async function formatSampleData() {
-  console.log('📦 Loading sample hero data...');
+  console.log('📦 Loading hero data...');
 
   const inputFile = path.join(process.cwd(), 'output', 'all-heroes-complete.json');
   const rawData = await fs.readFile(inputFile, 'utf-8');
   const heroesData = JSON.parse(rawData);
 
-  console.log(`✅ Loaded ${heroesData.length} sample heroes`);
+  console.log(`✅ Loaded ${heroesData.length} heroes`);
 
   const formattedData = {};
 
@@ -24,19 +23,18 @@ async function formatSampleData() {
     }
 
     const heroKey = hero.heroName;
-    const raw = hero.rawData;
 
-    // Format skills from strategyData.skill
+    // Format skills from strategy.skill (new location)
     const skills = [];
-    if (raw.strategyData?.skill) {
-      for (const skillGroup of raw.strategyData.skill) {
+    if (hero.strategy?.skill) {
+      for (const skillGroup of hero.strategy.skill) {
         if (skillGroup.skillList) {
           for (const skill of skillGroup.skillList) {
             skills.push({
               skillName: skill.skillName || '',
-              cooldown: skill.skillCd ? [skill.skillCd / 1000] : [0], // Convert ms to seconds
+              cooldown: skill.skillCd ? [skill.skillCd / 1000] : [0],
               cost: [skill.skillCostList?.skillCost || 0],
-              skillDesc: skill.skillDesc ? skill.skillDesc.replace(/<[^>]*>/g, '') : '', // Remove HTML tags
+              skillDesc: skill.skillDesc ? skill.skillDesc.replace(/<[^>]*>/g, '') : '',
               skillImg: skill.skillIcon || ''
             });
           }
@@ -44,11 +42,11 @@ async function formatSampleData() {
       }
     }
 
-    // Format skins from worldData.libraryList (images)
+    // Format skins from world.libraryList
     const skins = [];
-    if (raw.worldData?.libraryList) {
-      for (const item of raw.worldData.libraryList) {
-        if (item.materialType === 1 && item.image) { // materialType 1 = images
+    if (hero.world?.libraryList) {
+      for (const item of hero.world.libraryList) {
+        if (item.materialType === 1 && item.image) {
           const img = item.image;
           skins.push({
             skinName: img.title2 || img.title1 || '',
@@ -58,13 +56,13 @@ async function formatSampleData() {
       }
     }
 
-    // Format best partners from strategyData.combination
+    // Format best partners from strategy.combination (type 2)
     const bestPartners = {};
-    if (raw.strategyData?.combination) {
-      for (const combo of raw.strategyData.combination) {
-        if (combo.combinationType === 2 && combo.heroCombination) { // Type 2 = team composition
+    if (hero.strategy?.combination) {
+      for (const combo of hero.strategy.combination) {
+        if (combo.combinationType === 2 && combo.heroCombination) {
           for (const partner of combo.heroCombination) {
-            if (partner.heroId !== hero.heroId) { // Don't include self
+            if (partner.heroId !== hero.heroId) {
               bestPartners[partner.heroName] = {
                 name: partner.heroName,
                 thumbnail: partner.heroIcon || '',
@@ -77,11 +75,11 @@ async function formatSampleData() {
       }
     }
 
-    // Format suppressing heroes (heroes this hero is good against)
+    // Format suppressing heroes (type 1 - heroes this hero is good against)
     const suppressingHeroes = {};
-    if (raw.strategyData?.combination) {
-      for (const combo of raw.strategyData.combination) {
-        if (combo.combinationType === 1 && combo.heroCombination) { // Type 1 = counter picks
+    if (hero.strategy?.combination) {
+      for (const combo of hero.strategy.combination) {
+        if (combo.combinationType === 1 && combo.heroCombination) {
           for (const target of combo.heroCombination) {
             if (target.heroId !== hero.heroId) {
               suppressingHeroes[target.heroName] = {
@@ -96,11 +94,11 @@ async function formatSampleData() {
       }
     }
 
-    // Format suppressed by heroes (heroes that counter this hero)
+    // Format suppressed by heroes (type 3 - heroes that counter this hero)
     const suppressedHeroes = {};
-    if (raw.strategyData?.combination) {
-      for (const combo of raw.strategyData.combination) {
-        if (combo.combinationType === 3 && combo.heroCombination) { // Type 3 = countered by
+    if (hero.strategy?.combination) {
+      for (const combo of hero.strategy.combination) {
+        if (combo.combinationType === 3 && combo.heroCombination) {
           for (const counter of combo.heroCombination) {
             if (counter.heroId !== hero.heroId) {
               suppressedHeroes[counter.heroName] = {
@@ -115,11 +113,8 @@ async function formatSampleData() {
       }
     }
 
-    // Format equipment/emblems - Not available in Global version data
     const emblems = [];
-
-    // Get stats
-    const stats = raw.heroData?.baseData || {};
+    const stats = hero.stats || {};
 
     formattedData[heroKey] = {
       title: hero.cover || hero.heroName,
@@ -129,10 +124,10 @@ async function formatSampleData() {
       lane: hero.recommendRoadName || '',
       icon: hero.icon || '',
       skill: skills,
-      survivalPercentage: '0%', // Not available in Global data
-      attackPercentage: '0%', // Not available in Global data
-      abilityPercentage: '0%', // Not available in Global data
-      difficultyPercentage: '0%', // Not available in Global data
+      survivalPercentage: '0%',
+      attackPercentage: '0%',
+      abilityPercentage: '0%',
+      difficultyPercentage: '0%',
       skins: skins,
       emblems: emblems,
       emblemTips: '',
@@ -146,29 +141,24 @@ async function formatSampleData() {
         tier: stats.hot || ''
       },
       world: {
-        region: raw.worldData?.world?.region || '',
-        identity: raw.worldData?.world?.identity || '',
-        energy: raw.worldData?.world?.energy || ''
+        region: hero.world?.world?.region || '',
+        identity: hero.world?.world?.identity || '',
+        energy: hero.world?.world?.energy || ''
       }
     };
 
-    console.log(`  ✅ Formatted: ${heroKey}`);
-    console.log(`     - ${skills.length} skills`);
-    console.log(`     - ${skins.length} skins`);
-    console.log(`     - ${Object.keys(bestPartners).length} best partners`);
+    const partnerCount = Object.keys(bestPartners).length;
+    const strongCount = Object.keys(suppressingHeroes).length;
+    const weakCount = Object.keys(suppressedHeroes).length;
+    
+    console.log(`  ✅ ${heroKey}: ${partnerCount} partners, ${strongCount} strong against, ${weakCount} weak against`);
   }
 
-  // Save formatted data
   const outputFile = path.join(process.cwd(), 'output', 'formatted-api.json');
   await fs.writeFile(outputFile, JSON.stringify({ main: formattedData }, null, 2));
 
-  console.log(`\n💾 Saved formatted sample to: ${outputFile}`);
-  console.log(`📊 Total heroes formatted: ${Object.keys(formattedData).length}`);
-
-  // Pretty print one hero as example
-  console.log('\n📄 Sample output:');
-  const firstHero = Object.values(formattedData)[0];
-  console.log(JSON.stringify({ [Object.keys(formattedData)[0]]: firstHero }, null, 2).substring(0, 1000) + '...');
+  console.log(`\n💾 Saved formatted data to: ${outputFile}`);
+  console.log(`📊 Total heroes: ${Object.keys(formattedData).length}`);
 }
 
 formatSampleData().catch(console.error);

@@ -1,0 +1,17 @@
+{
+  "type": "counter",
+  "contributorName": "Anonymous",
+  "contributorEmail": "",
+  "data": {
+    "heroName": "CHICHA",
+    "action": "remove",
+    "relationshipType": "weakAgainst",
+    "targetHeroName": "NEZHA",
+    "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20240529/17169519948178.jpeg",
+    "description": ""
+  },
+  "submittedAt": "2026-02-21T20:38:37.817Z",
+  "status": "approved",
+  "id": "counter-1771706317817",
+  "reviewedAt": "2026-02-21T21:02:55.711Z"
+}

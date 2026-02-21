@@ -31,7 +31,6 @@ async function scrapeAllHeroes() {
 
       console.log(`[${count}/${HERO_IDS.length}] Scraping hero ${heroId}...`);
 
-      // Create new page for each hero to avoid caching issues
       const page = await browser.newPage();
 
       await page.setUserAgent(
@@ -75,7 +74,6 @@ async function scrapeAllHeroes() {
           timeout: 30000
         });
 
-        // Wait for API response with timeout
         await Promise.race([
           new Promise(resolve => {
             responseResolver = resolve;
@@ -93,11 +91,20 @@ async function scrapeAllHeroes() {
             relationships: currentHeroData.heroData?.relationData,
             skins: currentHeroData.heroData?.skinData,
             equipment: currentHeroData.strategyData?.equipData,
+            // ADD strategy data including combination/counter picks
+            strategy: {
+              skill: currentHeroData.strategyData?.skill,
+              combination: currentHeroData.strategyData?.combination,
+              suitStrategy: currentHeroData.strategyData?.suitStrategy
+            },
             world: currentHeroData.worldData
           };
 
           heroesData.push(heroInfo);
-          console.log(`  ✅ ${heroInfo.heroName || 'Unknown'} - ${heroInfo.mainJobName || 'N/A'}`);
+          
+          // Log counter data count
+          const combos = currentHeroData.strategyData?.combination || [];
+          console.log(`  ✅ ${heroInfo.heroName || 'Unknown'} - ${combos.length} combos`);
         } else {
           console.log(`  ⚠️  No data received for hero ${heroId}`);
         }
@@ -107,7 +114,6 @@ async function scrapeAllHeroes() {
         await page.close();
       }
 
-      // Small delay to avoid rate limiting
       if (count % 10 === 0) {
         console.log(`  💤 Pausing for 5 seconds...`);
         await new Promise(resolve => setTimeout(resolve, 5000));
@@ -116,7 +122,6 @@ async function scrapeAllHeroes() {
       }
     }
 
-    // Save data
     console.log('\n💾 Saving data...');
 
     const outputDir = path.join(process.cwd(), 'output');
@@ -127,7 +132,6 @@ async function scrapeAllHeroes() {
 
     console.log(`✅ Complete! Saved ${heroesData.length} heroes to: ${outputFile}`);
 
-    // Create a summary
     const summary = {
       totalHeroes: heroesData.length,
       scrapedAt: new Date().toISOString(),
@@ -135,7 +139,8 @@ async function scrapeAllHeroes() {
         heroId: h.heroId,
         heroName: h.heroName,
         mainJob: h.mainJobName,
-        lane: h.recommendRoadName
+        lane: h.recommendRoadName,
+        combosCount: h.strategy?.combination?.length || 0
       }))
     };
 

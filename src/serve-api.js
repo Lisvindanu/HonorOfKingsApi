@@ -59,13 +59,31 @@ async function handler(req, res) {
           return;
         }
 
-        if (!['skin', 'hero', 'series'].includes(contribution.type)) {
+        if (!['skin', 'hero', 'series', 'counter'].includes(contribution.type)) {
           res.writeHead(400);
-          res.end(JSON.stringify({ error: 'Invalid type. Must be: skin, hero, or series' }));
+          res.end(JSON.stringify({ error: 'Invalid type. Must be: skin, hero, series, or counter' }));
           return;
         }
 
-        // Save to pending
+        // Check for authenticated user
+        let contributorId = null;
+        let contributorName = contribution.contributorName || 'Anonymous';
+        const authHeader = req.headers.authorization;
+        if (authHeader && authHeader.startsWith('Bearer ')) {
+          try {
+            const { verifyToken } = await import('./auth-middleware.js');
+            const token = authHeader.split(' ')[1];
+            const decoded = verifyToken(token);
+            if (decoded && decoded.userId) {
+              contributorId = decoded.userId;
+              contributorName = decoded.name || contributorName;
+            }
+          } catch (e) {
+            // Token verification failed, continue as anonymous
+          }
+        }
+
+        // Save to pending files
         const contributionsDir = path.join(process.cwd(), 'contributions', 'pending');
         await fs.mkdir(contributionsDir, { recursive: true });
 
@@ -76,6 +94,8 @@ async function handler(req, res) {
 
         const contributionData = {
           ...contribution,
+          contributorId,
+          contributorName,
           submittedAt: new Date().toISOString(),
           status: 'pending',
           id
@@ -83,7 +103,20 @@ async function handler(req, res) {
 
         await fs.writeFile(filepath, JSON.stringify(contributionData, null, 2));
 
-        console.log(`✅ New contribution: ${filename}`);
+        // Also save to database if user is authenticated
+        if (contributorId) {
+          const communityDb = await import('./community-db.js');
+          await communityDb.createContribution({
+            contributorId,
+            type: contribution.type,
+            data: contribution.data,
+            status: 'pending'
+          });
+          // Increment contribution count for the user
+          await communityDb.incrementContributorContributions(contributorId);
+        }
+
+        console.log(`✅ New contribution: ${filename}` + (contributorId ? ` (by user ${contributorId})` : ' (anonymous)'));
 
         // Send notification
         await emailService.notifyContributionReceived(contributionData).catch(err =>

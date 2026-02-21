@@ -1,0 +1,18 @@
+{
+  "type": "counter",
+  "contributorName": "Tampangaming",
+  "contributorEmail": "Lisvindanu25@gmail.com",
+  "data": {
+    "heroName": "LAPULAPU",
+    "action": "add",
+    "relationshipType": "weakAgainst",
+    "targetHeroName": "AO'YIN",
+    "targetHeroIcon": "https://world.honorofkings.com/zlkdatasys/images/image/20240702/17199033998089.jpg",
+    "description": ""
+  },
+  "contributorId": "5",
+  "submittedAt": "2026-02-21T21:02:33.343Z",
+  "status": "approved",
+  "id": "counter-1771707753343",
+  "reviewedAt": "2026-02-21T21:02:50.370Z"
+}
