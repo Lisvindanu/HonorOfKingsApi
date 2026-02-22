@@ -40,6 +40,44 @@ async function handler(req, res) {
     }
   }
 
+  // Adjustments API endpoint
+  else if (req.url === "/api/adjustments" && req.method === "GET") {
+    try {
+      const filePath = path.join(process.cwd(), "output", "adjustments-data.json");
+      const data = await fs.readFile(filePath, "utf-8");
+      res.writeHead(200);
+      res.end(data);
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: "Adjustments data not available" }));
+
+    }
+  }
+
+  // Image proxy endpoint for CORS bypass
+  else if (req.url.startsWith("/proxy-image/") && req.method === "GET") {
+    const imagePath = req.url.replace("/proxy-image/", "");
+    const imageUrl = "https://world.honorofkings.com/" + imagePath;
+    
+    try {
+      const https = await import("https");
+      
+      https.default.get(imageUrl, (imgRes) => {
+        const contentType = imgRes.headers["content-type"] || "image/jpeg";
+        res.setHeader("Content-Type", contentType);
+        res.setHeader("Cache-Control", "public, max-age=31536000");
+        res.writeHead(imgRes.statusCode);
+        imgRes.pipe(res);
+      }).on("error", (err) => {
+        res.writeHead(500);
+        res.end(JSON.stringify({ error: "Failed to fetch image" }));
+      });
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: "Image proxy error" }));
+    }
+  }
+
   // Submit contribution
   else if (req.url === '/api/contribute' && req.method === 'POST') {
     let body = '';
