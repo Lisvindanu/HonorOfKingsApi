@@ -62,16 +62,57 @@ async function handler(req, res) {
   }
 
   // Adjustments API endpoint
-  else if (req.url === "/api/adjustments" && req.method === "GET") {
+  else if (req.url.startsWith("/api/adjustments") && !req.url.startsWith("/api/adjustments/") && req.method === "GET") {
     try {
-      const filePath = path.join(process.cwd(), "output", "adjustments-data.json");
+      const urlObj = new URL(req.url, "http://localhost");
+      const seasonParam = urlObj.searchParams.get("season");
+
+      if (seasonParam) {
+        // Return specific season from full dataset
+        const fullPath = path.join(process.cwd(), "output", "adjustments-full.json");
+        const fullData = JSON.parse(await fs.readFile(fullPath, "utf-8"));
+        const seasonData = fullData.allSeasons?.[seasonParam];
+        if (!seasonData) {
+          res.writeHead(404);
+          res.end(JSON.stringify({ error: `Season ${seasonParam} not found` }));
+        } else {
+          const result = {
+            scrapedAt: fullData.scrapedAt,
+            season: seasonData.season,
+            adjustments: seasonData.adjustments,
+            heroList: fullData.heroList,
+          };
+          res.writeHead(200);
+          res.end(JSON.stringify(result));
+        }
+      } else {
+        // Return current season (try new format first, fallback to old)
+        let filePath = path.join(process.cwd(), "output", "adjustments.json");
+        try {
+          await fs.access(filePath);
+        } catch {
+          filePath = path.join(process.cwd(), "output", "adjustments-data.json");
+        }
+        const data = await fs.readFile(filePath, "utf-8");
+        res.writeHead(200);
+        res.end(data);
+      }
+    } catch (error) {
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: "Adjustments data not available" }));
+    }
+  }
+
+  // Adjustments full (all seasons) endpoint
+  else if (req.url === "/api/adjustments/full" && req.method === "GET") {
+    try {
+      const filePath = path.join(process.cwd(), "output", "adjustments-full.json");
       const data = await fs.readFile(filePath, "utf-8");
       res.writeHead(200);
       res.end(data);
     } catch (error) {
       res.writeHead(500);
-      res.end(JSON.stringify({ error: "Adjustments data not available" }));
-
+      res.end(JSON.stringify({ error: "Full adjustments data not available" }));
     }
   }
 
