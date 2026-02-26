@@ -28,5 +28,8 @@ Thumbs.db
 tmp/
 .cache/
 
+# Backup files
+*.bak
+
 # HAR files (large network recordings)
 *.har
