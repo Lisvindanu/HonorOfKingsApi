@@ -12,6 +12,45 @@ const PORT = process.env.PORT || 8090;
 // Simple auth token (in production, use proper auth)
 const ADMIN_TOKEN = process.env.ADMIN_TOKEN || 'admin-secret-token-2024';
 
+// ── In-memory cache for large static JSON files ──────────────────────────────
+// Files are read once from disk then served from memory on every subsequent request.
+const FILE_CACHE = new Map();
+let ADJ_FULL_PARSED = null; // Parsed object cache for season-lookup queries
+
+async function readFileCached(filePath) {
+  if (!FILE_CACHE.has(filePath)) {
+    FILE_CACHE.set(filePath, await fs.readFile(filePath, 'utf-8'));
+  }
+  return FILE_CACHE.get(filePath);
+}
+
+async function getAdjFullParsed() {
+  if (!ADJ_FULL_PARSED) {
+    const raw = await readFileCached(path.join(process.cwd(), 'output', 'adjustments-full.json'));
+    ADJ_FULL_PARSED = JSON.parse(raw);
+  }
+  return ADJ_FULL_PARSED;
+}
+
+// Preload the two heaviest files at startup so first request is instant
+(async () => {
+  try {
+    await readFileCached(path.join(process.cwd(), 'output', 'merged-api.json'));
+    await getAdjFullParsed();
+    console.log('✅ File cache warm (merged-api.json + adjustments-full.json)');
+  } catch (e) {
+    console.warn('⚠️  Could not preload cache:', e.message);
+  }
+})();
+
+// Prevent unhandled DB / async errors from crashing the process
+process.on('unhandledRejection', (reason) => {
+  console.error('[unhandledRejection]', reason?.message || reason);
+});
+process.on('uncaughtException', (err) => {
+  console.error('[uncaughtException]', err.message);
+});
+
 async function handler(req, res) {
   // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -52,7 +91,7 @@ async function handler(req, res) {
   if (req.url === '/api/hok' || req.url === '/' || req.url === '/api') {
     try {
       const filePath = path.join(process.cwd(), 'output', 'merged-api.json');
-      const data = await fs.readFile(filePath, 'utf-8');
+      const data = await readFileCached(filePath);
       res.writeHead(200);
       res.end(data);
     } catch (error) {
@@ -69,8 +108,7 @@ async function handler(req, res) {
 
       if (seasonParam) {
         // Return specific season from full dataset
-        const fullPath = path.join(process.cwd(), "output", "adjustments-full.json");
-        const fullData = JSON.parse(await fs.readFile(fullPath, "utf-8"));
+        const fullData = await getAdjFullParsed();
         const seasonData = fullData.allSeasons?.[seasonParam];
         if (!seasonData) {
           res.writeHead(404);
@@ -93,7 +131,7 @@ async function handler(req, res) {
         } catch {
           filePath = path.join(process.cwd(), "output", "adjustments-data.json");
         }
-        const data = await fs.readFile(filePath, "utf-8");
+        const data = await readFileCached(filePath);
         res.writeHead(200);
         res.end(data);
       }
@@ -107,7 +145,7 @@ async function handler(req, res) {
   else if (req.url === "/api/adjustments/full" && req.method === "GET") {
     try {
       const filePath = path.join(process.cwd(), "output", "adjustments-full.json");
-      const data = await fs.readFile(filePath, "utf-8");
+      const data = await readFileCached(filePath);
       res.writeHead(200);
       res.end(data);
     } catch (error) {
@@ -120,7 +158,7 @@ async function handler(req, res) {
   else if (req.url === "/api/items" && req.method === "GET") {
     try {
       const filePath = path.join(process.cwd(), "output", "items.json");
-      const data = await fs.readFile(filePath, "utf-8");
+      const data = await readFileCached(filePath);
       res.writeHead(200);
       res.end(data);
     } catch (error) {
@@ -133,7 +171,7 @@ async function handler(req, res) {
   else if (req.url === "/api/arcana" && req.method === "GET") {
     try {
       const filePath = path.join(process.cwd(), "output", "arcana.json");
-      const data = await fs.readFile(filePath, "utf-8");
+      const data = await readFileCached(filePath);
       res.writeHead(200);
       res.end(data);
     } catch (error) {
