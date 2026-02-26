@@ -42,6 +42,7 @@ async function mergeContribution(contributionId, action = 'approve') {
     case 'hero': merged = await mergeHero(apiData, contribution.data); break;
     case 'series': merged = await mergeSeries(apiData, contribution.data); break;
     case 'counter': merged = await mergeCounter(apiData, contribution.data); break;
+    case 'skin-edit': merged = await mergeSkinEdit(apiData, contribution.data); break;
   }
 
   if (merged) {
@@ -91,6 +92,25 @@ async function mergeSeries(apiData, seriesData) {
     }
   }
   return count > 0;
+}
+
+async function mergeSkinEdit(apiData, editData) {
+  for (const [, hero] of Object.entries(apiData.main)) {
+    if (hero.heroId === editData.heroId) {
+      const skin = hero.skins.find(s => s.skinName.toLowerCase() === editData.skinName.toLowerCase());
+      if (!skin) return false;
+      // Only overwrite if new value is non-empty string
+      if (editData.newTier && editData.newTier.trim()) {
+        skin.tier = editData.newTier;
+        skin.tierName = editData.newTier;
+      }
+      if (editData.newSeries && editData.newSeries.trim()) {
+        skin.skinSeries = editData.newSeries.trim();
+      }
+      return true;
+    }
+  }
+  return false;
 }
 
 async function mergeCounter(apiData, counterData) {

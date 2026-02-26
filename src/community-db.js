@@ -115,6 +115,31 @@ export async function voteTierList(id, voterId) {
   return tierList;
 }
 
+
+export async function updateTierList(id, updates, requesterId) {
+  await ensureTierListsExists();
+  const tierLists = await getAllTierLists();
+  const idx = tierLists.findIndex(t => t.id === id);
+
+  if (idx === -1) return { error: 'Tier list not found' };
+
+  const tierList = tierLists[idx];
+
+  // Ownership check: match by creatorId or creatorName
+  const isOwner =
+    (tierList.creatorId && tierList.creatorId === requesterId.userId) ||
+    (tierList.creatorName && tierList.creatorName === requesterId.name);
+
+  if (!isOwner) return { error: 'Forbidden' };
+
+  if (updates.title) tierList.title = updates.title.trim();
+  if (updates.tiers) tierList.tiers = updates.tiers;
+  tierList.updatedAt = new Date().toISOString();
+
+  await writeJSON(TIER_LISTS_FILE, tierLists);
+  return tierList;
+}
+
 // ============ CONTRIBUTORS (PostgreSQL) ============
 export async function getAllContributors() {
   try {
@@ -631,21 +656,196 @@ export async function updateContributionStatusByData(contributorId, contribution
       }
     }
     
-    // For other types, try matching by full data
+    // For skin-edit type, match by heroName and skinName
+    if (contributionData.heroName && contributionData.skinName) {
+      const skinResult = await pool.query(
+        `UPDATE contributions 
+         SET status = $1 
+         WHERE id = (
+           SELECT id FROM contributions
+           WHERE contributor_id = $2
+           AND data->>'heroName' = $3
+           AND data->>'skinName' = $4
+           AND status = 'pending'
+           ORDER BY created_at DESC
+           LIMIT 1
+         )
+         RETURNING *`,
+        [newStatus, parseInt(contributorId), contributionData.heroName, contributionData.skinName]
+      );
+      if (skinResult.rows.length > 0) {
+        return skinResult.rows[0];
+      }
+    }
+
+    // Generic fallback: match most recent pending contribution
     const result = await pool.query(
       `UPDATE contributions 
        SET status = $1 
-       WHERE contributor_id = $2 
-       AND status = 'pending'
-       ORDER BY created_at DESC
-       LIMIT 1
+       WHERE id = (
+         SELECT id FROM contributions
+         WHERE contributor_id = $2
+         AND status = 'pending'
+         ORDER BY created_at DESC
+         LIMIT 1
+       )
        RETURNING *`,
       [newStatus, parseInt(contributorId)]
     );
-    
+
     return result.rows[0] || null;
   } catch (error) {
     console.error('Failed to update contribution status:', error);
+    return null;
+  }
+}
+
+// ============ COMMENTS (PostgreSQL) ============
+
+export async function getCommentsByTierListId(tierListId) {
+  try {
+    const result = await pool.query(
+      `SELECT c.id, c.tier_list_id, c.parent_id, c.contributor_id, c.author_name, c.content, c.created_at,
+              contrib.name AS contributor_display_name
+       FROM comments c
+       LEFT JOIN contributors contrib ON c.contributor_id = contrib.id
+       WHERE c.tier_list_id = $1
+       ORDER BY c.created_at ASC`,
+      [tierListId]
+    );
+    return result.rows.map(row => ({
+      id: row.id,
+      tierListId: row.tier_list_id,
+      parentId: row.parent_id,
+      contributorId: row.contributor_id,
+      authorName: row.contributor_display_name || row.author_name,
+      content: row.content,
+      createdAt: row.created_at,
+      isVerified: !!row.contributor_id,
+    }));
+  } catch (error) {
+    console.error('Failed to get comments:', error);
+    return [];
+  }
+}
+
+export async function createComment({ tierListId, parentId, contributorId, authorName, content }) {
+  try {
+    const result = await pool.query(
+      `INSERT INTO comments (tier_list_id, parent_id, contributor_id, author_name, content)
+       VALUES ($1, $2, $3, $4, $5)
+       RETURNING *`,
+      [tierListId, parentId || null, contributorId || null, authorName, content]
+    );
+    const row = result.rows[0];
+    return {
+      id: row.id,
+      tierListId: row.tier_list_id,
+      parentId: row.parent_id,
+      contributorId: row.contributor_id,
+      authorName: row.author_name,
+      content: row.content,
+      createdAt: row.created_at,
+      isVerified: !!row.contributor_id,
+    };
+  } catch (error) {
+    console.error('Failed to create comment:', error);
+    return null;
+  }
+}
+
+export async function deleteComment(id, requesterId, isAdmin) {
+  try {
+    const existing = await pool.query(`SELECT * FROM comments WHERE id = $1`, [parseInt(id)]);
+    if (existing.rows.length === 0) return { error: 'Comment not found' };
+    const comment = existing.rows[0];
+    if (!isAdmin && comment.contributor_id !== parseInt(requesterId)) {
+      return { error: 'Unauthorized' };
+    }
+    await pool.query(`DELETE FROM comments WHERE id = $1`, [parseInt(id)]);
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to delete comment:', error);
+    return { error: 'Database error' };
+  }
+}
+
+// FEEDBACK
+export async function submitFeedback({ name, category, message, userAgent }) {
+  try {
+    const result = await pool.query(
+      'INSERT INTO feedback (name, category, message, user_agent) VALUES ($1, $2, $3, $4) RETURNING *',
+      [name || 'Anonymous', category || 'other', message, userAgent || null]
+    );
+    return result.rows[0];
+  } catch (error) {
+    console.error('submitFeedback error:', error);
+    return null;
+  }
+}
+
+export async function getFeedbacks(limit = 200) {
+  try {
+    const result = await pool.query(
+      'SELECT * FROM feedback ORDER BY created_at DESC LIMIT $1',
+      [limit]
+    );
+    return result.rows;
+  } catch (error) {
+    console.error('getFeedbacks error:', error);
+    return [];
+  }
+}
+
+export async function markFeedbackRead(id) {
+  try {
+    await pool.query('UPDATE feedback SET is_read = TRUE WHERE id = $1', [id]);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+// FEATURE VOTES
+export async function getFeatureVoteCounts() {
+  try {
+    const result = await pool.query(
+      'SELECT feature, COUNT(*) as count FROM feature_votes GROUP BY feature'
+    );
+    const counts = { playground: 0, 'item-synergy': 0, 'dev-talk': 0 };
+    for (const row of result.rows) {
+      counts[row.feature] = parseInt(row.count);
+    }
+    return counts;
+  } catch (error) {
+    console.error('getFeatureVoteCounts error:', error);
+    return { playground: 0, 'item-synergy': 0, 'dev-talk': 0 };
+  }
+}
+
+export async function upsertFeatureVote(voterId, feature) {
+  try {
+    const valid = ['playground', 'item-synergy', 'dev-talk'];
+    if (!valid.includes(feature)) return { error: 'Invalid feature' };
+    await pool.query(
+      'INSERT INTO feature_votes (voter_id, feature) VALUES ($1, $2) ON CONFLICT (voter_id) DO UPDATE SET feature = $2, updated_at = NOW()',
+      [voterId, feature]
+    );
+    return { success: true };
+  } catch (error) {
+    console.error('upsertFeatureVote error:', error);
+    return { error: 'Database error' };
+  }
+}
+
+export async function getVoterChoice(voterId) {
+  try {
+    const result = await pool.query(
+      'SELECT feature FROM feature_votes WHERE voter_id = $1',
+      [voterId]
+    );
+    return result.rows[0]?.feature || null;
+  } catch (error) {
     return null;
   }
 }
