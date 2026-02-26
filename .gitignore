@@ -31,5 +31,8 @@ tmp/
 # Backup files
 *.bak
 
+# Runtime data — never reset by git (stored in DB or local JSON)
+community-data/
+
 # HAR files (large network recordings)
 *.har
