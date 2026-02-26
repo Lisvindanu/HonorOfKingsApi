@@ -92,7 +92,7 @@ async function handler(req, res) {
     try {
       const filePath = path.join(process.cwd(), 'output', 'merged-api.json');
       const data = await readFileCached(filePath);
-      res.writeHead(200);
+      res.writeHead(200, { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=3600' });
       res.end(data);
     } catch (error) {
       res.writeHead(500);
@@ -120,7 +120,7 @@ async function handler(req, res) {
             adjustments: seasonData.adjustments,
             heroList: fullData.heroList,
           };
-          res.writeHead(200);
+          res.writeHead(200, { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=3600' });
           res.end(JSON.stringify(result));
         }
       } else {
@@ -132,7 +132,7 @@ async function handler(req, res) {
           filePath = path.join(process.cwd(), "output", "adjustments-data.json");
         }
         const data = await readFileCached(filePath);
-        res.writeHead(200);
+        res.writeHead(200, { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=3600' });
         res.end(data);
       }
     } catch (error) {
@@ -146,7 +146,7 @@ async function handler(req, res) {
     try {
       const filePath = path.join(process.cwd(), "output", "adjustments-full.json");
       const data = await readFileCached(filePath);
-      res.writeHead(200);
+      res.writeHead(200, { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=3600' });
       res.end(data);
     } catch (error) {
       res.writeHead(500);
@@ -159,7 +159,7 @@ async function handler(req, res) {
     try {
       const filePath = path.join(process.cwd(), "output", "items.json");
       const data = await readFileCached(filePath);
-      res.writeHead(200);
+      res.writeHead(200, { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=3600' });
       res.end(data);
     } catch (error) {
       res.writeHead(500);
@@ -172,7 +172,7 @@ async function handler(req, res) {
     try {
       const filePath = path.join(process.cwd(), "output", "arcana.json");
       const data = await readFileCached(filePath);
-      res.writeHead(200);
+      res.writeHead(200, { 'Cache-Control': 'public, max-age=300, stale-while-revalidate=3600' });
       res.end(data);
     } catch (error) {
       res.writeHead(500);
