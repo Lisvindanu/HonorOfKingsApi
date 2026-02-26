@@ -64,80 +64,78 @@ async function writeJSON(filePath, data) {
   }
 }
 
-// ============ TIER LISTS (JSON) ============
+// ============ TIER LISTS (PostgreSQL) ============
+function rowToTierList(row) {
+  return {
+    id: row.id,
+    title: row.title,
+    creatorName: row.creator_name,
+    creatorId: row.creator_id != null ? row.creator_id.toString() : null,
+    tiers: row.tiers,
+    votes: row.votes,
+    votedBy: row.voted_by || [],
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+  };
+}
+
 export async function getAllTierLists() {
-  await ensureTierListsExists();
-  return await readJSON(TIER_LISTS_FILE);
+  try {
+    const result = await pool.query('SELECT * FROM tier_lists ORDER BY created_at DESC');
+    return result.rows.map(rowToTierList);
+  } catch (error) {
+    console.error('Failed to get tier lists:', error);
+    return [];
+  }
 }
 
 export async function getTierListById(id) {
-  const tierLists = await getAllTierLists();
-  return tierLists.find(t => t.id === id);
+  try {
+    const result = await pool.query('SELECT * FROM tier_lists WHERE id = $1', [id]);
+    return result.rows.length ? rowToTierList(result.rows[0]) : null;
+  } catch (error) {
+    console.error('Failed to get tier list by id:', error);
+    return null;
+  }
 }
 
 export async function createTierList(tierListData) {
-  await ensureTierListsExists();
-  const tierLists = await getAllTierLists();
-
-  const newTierList = {
-    id: Date.now().toString(),
-    ...tierListData,
-    votes: 0,
-    votedBy: [],
-    createdAt: new Date().toISOString(),
-  };
-
-  tierLists.push(newTierList);
-  await writeJSON(TIER_LISTS_FILE, tierLists);
-
-  return newTierList;
+  const id = Date.now().toString();
+  const { title, creatorName, creatorId, tiers } = tierListData;
+  const result = await pool.query(
+    'INSERT INTO tier_lists (id, title, creator_name, creator_id, tiers) VALUES ($1, $2, $3, $4, $5) RETURNING *',
+    [id, title, creatorName, creatorId ? parseInt(creatorId) : null, JSON.stringify(tiers)]
+  );
+  return rowToTierList(result.rows[0]);
 }
 
 export async function voteTierList(id, voterId) {
-  await ensureTierListsExists();
-  const tierLists = await getAllTierLists();
-  const tierList = tierLists.find(t => t.id === id);
-
-  if (!tierList) {
-    return { error: 'Tier list not found' };
-  }
-
-  const voterKey = voterId || 'anonymous';
-  if (tierList.votedBy.includes(voterKey)) {
-    return { error: 'Already voted' };
-  }
-
-  tierList.votes++;
-  tierList.votedBy.push(voterKey);
-
-  await writeJSON(TIER_LISTS_FILE, tierLists);
-
-  return tierList;
+  const voterKey = (voterId || 'anonymous').toString();
+  const existing = await pool.query('SELECT voted_by FROM tier_lists WHERE id = $1', [id]);
+  if (!existing.rows.length) return { error: 'Tier list not found' };
+  if (existing.rows[0].voted_by.includes(voterKey)) return { error: 'Already voted' };
+  const result = await pool.query(
+    'UPDATE tier_lists SET votes = votes + 1, voted_by = array_append(voted_by, $2), updated_at = NOW() WHERE id = $1 RETURNING *',
+    [id, voterKey]
+  );
+  return rowToTierList(result.rows[0]);
 }
 
-
 export async function updateTierList(id, updates, requesterId) {
-  await ensureTierListsExists();
-  const tierLists = await getAllTierLists();
-  const idx = tierLists.findIndex(t => t.id === id);
-
-  if (idx === -1) return { error: 'Tier list not found' };
-
-  const tierList = tierLists[idx];
-
-  // Ownership check: match by creatorId or creatorName
+  const existing = await pool.query('SELECT * FROM tier_lists WHERE id = $1', [id]);
+  if (!existing.rows.length) return { error: 'Tier list not found' };
+  const tierList = rowToTierList(existing.rows[0]);
   const isOwner =
-    (tierList.creatorId && tierList.creatorId === requesterId.userId) ||
+    (tierList.creatorId && tierList.creatorId === requesterId.userId?.toString()) ||
     (tierList.creatorName && tierList.creatorName === requesterId.name);
-
   if (!isOwner) return { error: 'Forbidden' };
-
-  if (updates.title) tierList.title = updates.title.trim();
-  if (updates.tiers) tierList.tiers = updates.tiers;
-  tierList.updatedAt = new Date().toISOString();
-
-  await writeJSON(TIER_LISTS_FILE, tierLists);
-  return tierList;
+  const title = updates.title ? updates.title.trim() : tierList.title;
+  const tiers = updates.tiers || tierList.tiers;
+  const result = await pool.query(
+    'UPDATE tier_lists SET title = $2, tiers = $3, updated_at = NOW() WHERE id = $1 RETURNING *',
+    [id, title, JSON.stringify(tiers)]
+  );
+  return rowToTierList(result.rows[0]);
 }
 
 // ============ CONTRIBUTORS (PostgreSQL) ============
@@ -498,8 +496,6 @@ export async function rejectContribution(id) {
   }
 }
 
-// Initialize tier lists storage
-ensureTierListsExists();
 // Update contributor profile (name, email)
 export async function updateContributorProfile(id, updates) {
   try {
@@ -606,9 +602,16 @@ export async function getContributionsByContributorId(contributorId) {
 
 // Get tier lists by contributor name
 export async function getTierListsByContributor(contributorName) {
-  await ensureTierListsExists();
-  const tierLists = await getAllTierLists();
-  return tierLists.filter(t => t.creatorName === contributorName);
+  try {
+    const result = await pool.query(
+      'SELECT * FROM tier_lists WHERE creator_name = $1 ORDER BY created_at DESC',
+      [contributorName]
+    );
+    return result.rows.map(rowToTierList);
+  } catch (error) {
+    console.error('Failed to get tier lists by contributor:', error);
+    return [];
+  }
 }
 
 // Get tier lists by creator ID
@@ -618,16 +621,7 @@ export async function getTierListsByCreatorId(creatorId) {
       'SELECT * FROM tier_lists WHERE creator_id = $1 ORDER BY created_at DESC',
       [parseInt(creatorId)]
     );
-
-    return result.rows.map(row => ({
-      id: row.id.toString(),
-      title: row.title,
-      creatorName: row.creator_name,
-      tiers: row.tiers,
-      votes: row.votes || 0,
-      votedBy: row.voted_by || [],
-      createdAt: row.created_at,
-    }));
+    return result.rows.map(rowToTierList);
   } catch (error) {
     console.error('Failed to get tier lists by creator:', error);
     return [];
