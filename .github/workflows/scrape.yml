@@ -1,0 +1,33 @@
+name: Auto Scrape Patch Notes
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'  # Every Monday at 3 AM UTC
+  workflow_dispatch:       # Allow manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    name: Scrape & Update Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: SSH into VPS and run scraper
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: root
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            echo '=== Starting scrape job ==='
+            cd /root/HonorOfKingsApi
+
+            echo '--- Running adjustments scraper ---'
+            node scripts/scrape-adjustments-full.mjs
+
+            echo '--- Restarting API ---'
+            pm2 restart hok-api
+
+            echo '=== Done ==='
+          script_stop: true
+          command_timeout: 25m
