@@ -5,6 +5,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 import emailService from './email-service.js';
 import { handleCommunityRoutes } from "./community-routes.js";
+import { handlePostsRoutes } from "./posts-routes.js";
 
 const execPromise = promisify(exec);
 const PORT = process.env.PORT || 8090;
@@ -555,6 +556,11 @@ async function handler(req, res) {
   else if (req.url === '/health') {
     res.writeHead(200);
     res.end(JSON.stringify({ status: 'ok', timestamp: new Date().toISOString() }));
+  }
+
+  // Try posts routes
+  else if (await handlePostsRoutes(req, res)) {
+    return;
   }
 
   // Try community routes
