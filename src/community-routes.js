@@ -1,5 +1,8 @@
 import { generateToken, optionalAuth } from './auth-middleware.js';
 import * as db from './community-db.js';
+import { OAuth2Client } from 'google-auth-library';
+
+const googleClient = new OAuth2Client('857151489825-5v6iesseopqcjkdeprjh6gck9ung15gs.apps.googleusercontent.com');
 
 // Helper to parse request body
 async function parseBody(req) {
@@ -102,6 +105,46 @@ export async function handleCommunityRoutes(req, res) {
       console.error('Login error:', error);
       res.writeHead(500);
       res.end(JSON.stringify({ error: 'Failed to login' }));
+      return true;
+    }
+  }
+
+  if (pathname === '/api/auth/google' && req.method === 'POST') {
+    try {
+      const { credential } = await parseBody(req);
+      if (!credential) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ error: 'Google credential is required' }));
+        return true;
+      }
+
+      const ticket = await googleClient.verifyIdToken({
+        idToken: credential,
+        audience: '857151489825-5v6iesseopqcjkdeprjh6gck9ung15gs.apps.googleusercontent.com',
+      });
+      const payload = ticket.getPayload();
+
+      const result = await db.findOrCreateGoogleUser({
+        googleId: payload.sub,
+        email: payload.email,
+        name: payload.name,
+        avatar: payload.picture,
+      });
+
+      if (result.error) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ error: result.error }));
+        return true;
+      }
+
+      const token = generateToken(result.id, result.name);
+      res.writeHead(200);
+      res.end(JSON.stringify({ contributor: result, token }));
+      return true;
+    } catch (error) {
+      console.error('Google auth error:', error);
+      res.writeHead(401);
+      res.end(JSON.stringify({ error: 'Invalid Google credential' }));
       return true;
     }
   }

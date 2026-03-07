@@ -250,6 +250,75 @@ export async function createContributor(contributorData) {
   }
 }
 
+export async function findOrCreateGoogleUser({ googleId, email, name, avatar }) {
+  try {
+    // Check by google_id first
+    let result = await pool.query(
+      'SELECT * FROM contributors WHERE google_id = $1',
+      [googleId]
+    );
+
+    if (result.rows.length > 0) {
+      const row = result.rows[0];
+      // Update avatar if changed
+      await pool.query('UPDATE contributors SET avatar = $1 WHERE id = $2', [avatar, row.id]);
+      return {
+        id: row.id.toString(),
+        name: row.name,
+        email: row.email,
+        avatar: avatar,
+        totalContributions: row.total_contributions,
+        totalTierLists: row.total_tier_lists,
+        totalVotes: row.total_votes,
+        createdAt: row.created_at,
+      };
+    }
+
+    // Check by email (existing account without google_id)
+    if (email) {
+      result = await pool.query('SELECT * FROM contributors WHERE email = $1', [email]);
+      if (result.rows.length > 0) {
+        const row = result.rows[0];
+        // Link google account to existing email account
+        await pool.query(
+          'UPDATE contributors SET google_id = $1, avatar = $2 WHERE id = $3',
+          [googleId, avatar, row.id]
+        );
+        return {
+          id: row.id.toString(),
+          name: row.name,
+          email: row.email,
+          avatar: avatar,
+          totalContributions: row.total_contributions,
+          totalTierLists: row.total_tier_lists,
+          totalVotes: row.total_votes,
+          createdAt: row.created_at,
+        };
+      }
+    }
+
+    // Create new user
+    result = await pool.query(
+      'INSERT INTO contributors (name, email, google_id, avatar) VALUES ($1, $2, $3, $4) RETURNING *',
+      [name, email || null, googleId, avatar || null]
+    );
+    const row = result.rows[0];
+    return {
+      id: row.id.toString(),
+      name: row.name,
+      email: row.email,
+      avatar: row.avatar,
+      totalContributions: row.total_contributions,
+      totalTierLists: row.total_tier_lists,
+      totalVotes: row.total_votes,
+      createdAt: row.created_at,
+    };
+  } catch (error) {
+    console.error('Failed to find or create Google user:', error);
+    return { error: 'Failed to authenticate with Google' };
+  }
+}
+
 export async function verifyContributorPassword(email, password) {
   try {
     const contributor = await getContributorByEmail(email);
