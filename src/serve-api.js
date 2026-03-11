@@ -355,6 +355,7 @@ async function handler(req, res) {
       );
 
       console.log(stdout);
+      FILE_CACHE.delete(path.join(process.cwd(), 'output', 'merged-api.json'));
 
       res.writeHead(200);
       res.end(JSON.stringify({
@@ -403,6 +404,7 @@ async function handler(req, res) {
             { cwd: process.cwd() }
           );
           console.log(`Approved ${id}:`, stdout.trim());
+          FILE_CACHE.delete(path.join(process.cwd(), 'output', 'merged-api.json'));
           results.push({ id, success: true, action: 'approved' });
         } catch (err) {
           console.error(`Failed to approve ${id}:`, err.message);
