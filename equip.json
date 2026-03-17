@@ -1,0 +1,4346 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "equipId": 1133,
+                "equipName": "Eternity Blade",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+                "preEquipIds": [
+                    1121,
+                    1116
+                ],
+                "equipDesc": "PATK +120, Crit Rate +20%\nHigh crit damage",
+                "equipPrice": 2110,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 23,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "High crit damage",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 120
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 200000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911330,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Relentless\u003c/color\u003e\nGains \u003ccolor=#ff6600\u003e20% Critical Damage\u003c/color\u003e, and every 2% Critical Rate increases Critical Damage by 1% (up to 50%)."
+                    }
+                ]
+            },
+            {
+                "equipId": 11110,
+                "equipName": "Plume of Enchantment",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/11110.png",
+                "preEquipIds": [],
+                "equipDesc": "MSPD +5%",
+                "equipPrice": 300,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 5,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1111,
+                "equipName": "Iron Sword",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1111.png",
+                "preEquipIds": [],
+                "equipDesc": "PATK +20",
+                "equipPrice": 275,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 1,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 20
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 11211,
+                "equipName": "Ironbrand",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/11211.png",
+                "preEquipIds": [
+                    1112,
+                    1311
+                ],
+                "equipDesc": "ASPD +15%, HP +450",
+                "equipPrice": 850,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 14,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1112,
+                "equipName": "Dagger",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1112.png",
+                "preEquipIds": [],
+                "equipDesc": "Attack Speed",
+                "equipPrice": 300,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 2,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 100000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1115,
+                "equipName": "Lance of Swiftness",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/11151.png",
+                "preEquipIds": [
+                    1111,
+                    11110
+                ],
+                "equipDesc": "PATK +35, MSPD +7.5%",
+                "equipPrice": 760,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 6,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1113,
+                "equipName": "Pugilist's Gauntlet",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1113.png",
+                "preEquipIds": [],
+                "equipDesc": "Critical Rate",
+                "equipPrice": 300,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 3,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 80000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1212,
+                "equipName": "Sparkling Sapphire",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1212.png",
+                "preEquipIds": [],
+                "equipDesc": "MP +400",
+                "equipPrice": 275,
+                "equipType": 2,
+                "equipLevel": 1,
+                "equipShowId": 55,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 100,
+                        "valueType": 1,
+                        "value": 400
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1114,
+                "equipName": "Vampiric Scythe",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1114.png",
+                "preEquipIds": [],
+                "equipDesc": "Physical Lifesteal",
+                "equipPrice": 300,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 4,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 80000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1116,
+                "equipName": "Thunderclap Brand",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1116.png",
+                "preEquipIds": [
+                    1111,
+                    1113
+                ],
+                "equipDesc": "PATK +35, Crit Rate +12%",
+                "equipPrice": 820,
+                "equipType": 1,
+                "equipLevel": 1,
+                "equipShowId": 6,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 120000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1701,
+                "equipName": "Knowledge Gem",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1701.png",
+                "preEquipIds": [],
+                "equipDesc": "Extra Gold \u0026 EXP (for roamers)",
+                "equipPrice": 300,
+                "equipType": 7,
+                "equipLevel": 1,
+                "equipShowId": 116,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Extra Gold \u0026 EXP",
+                "equipEffects": [
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants \u003ccolor=#6bc872\u003e5 EXP\u003c/color\u003e and grants the teammate with the lowest Gold \u003ccolor=#6bc872\u003e5 Gold\u003c/color\u003e."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003ePlayer does not receive a share of the earnings from monster and minion kills, but instead gains a separate 25%–50% Gold and EXP (maxes out at the 20:00 mark).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1125,
+                "equipName": "Demonsbane",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+                "preEquipIds": [
+                    1121,
+                    1323
+                ],
+                "equipDesc": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense",
+                "equipPrice": 2060,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 21,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts MDEF",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 600
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911252,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Anti-Mage\u003c/color\u003e\nIncreases Magical Defense by (\u003ccolor=#ff6600\u003e50% {ad}\u003c/color\u003e), up to 250."
+                    }
+                ]
+            },
+            {
+                "equipId": 1211,
+                "equipName": "Spell Tome",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1211.png",
+                "preEquipIds": [],
+                "equipDesc": "MATK +35",
+                "equipPrice": 275,
+                "equipType": 2,
+                "equipLevel": 1,
+                "equipShowId": 54,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 35
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1121,
+                "equipName": "Storm Sword",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1121.png",
+                "preEquipIds": [
+                    1111,
+                    1111
+                ],
+                "equipDesc": "Physical Attack +75",
+                "equipPrice": 850,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 9,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 75
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1122,
+                "equipName": "Sunglow Striker",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1122.png",
+                "preEquipIds": [
+                    1111,
+                    1311
+                ],
+                "equipDesc": "PATK +35, HP +450",
+                "equipPrice": 760,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 10,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1123,
+                "equipName": "Twinblades of Destruction",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1123.png",
+                "preEquipIds": [
+                    1112,
+                    11110
+                ],
+                "equipDesc": "ASPD +15%, MSPD +7.5%",
+                "equipPrice": 760,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 11,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1124,
+                "equipName": "Meteor",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1124.png",
+                "preEquipIds": [
+                    1111,
+                    1218
+                ],
+                "equipDesc": "PATK +35\nCDR +7.5%",
+                "equipPrice": 760,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 12,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1158,
+                "equipName": "Bloodsoul",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1158.png",
+                "preEquipIds": [
+                    1114,
+                    1111
+                ],
+                "equipDesc": "PATK +35, Physical Lifesteal +12%",
+                "equipPrice": 800,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 14,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 120000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1126,
+                "equipName": "Doomsday",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+                "preEquipIds": [
+                    1158,
+                    11211
+                ],
+                "equipDesc": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage",
+                "equipPrice": 2100,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 14,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts BA damage",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 40
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Destruction\u003c/color\u003e\nBasic Attacks deal an extra 80–160 (+\u003ccolor=#3cb088\u003e7% of the target's extra {hp}\u003c/color\u003e) physical damage."
+                    }
+                ]
+            },
+            {
+                "equipId": 1127,
+                "equipName": "Destiny",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+                "preEquipIds": [
+                    1121,
+                    11211
+                ],
+                "equipDesc": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage",
+                "equipPrice": 2060,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 16,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Negates fatal damage",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 75
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91127,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Dark Curtain\u003c/color\u003e\nWhen taking fatal damage, instead of dying immediately, the hero gains invincibility and a 15% Attack Speed and Movement Speed increase for 1s \u003ccolor=#4f6f95\u003e(0.75s for ranged heroes)\u003c/color\u003e. After equipping this item, its effect duration increases by 0.01s every 5s, up to a maximum of 0.5s.\n({cd}: 120s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1129,
+                "equipName": "Swiftstrike Lance",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1129.png",
+                "preEquipIds": [
+                    1112,
+                    1111
+                ],
+                "equipDesc": "ASPD +15%, PATK +35",
+                "equipPrice": 800,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 13,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 150000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1351,
+                "equipName": "Amble - Winter",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+                "preEquipIds": [
+                    1341,
+                    1349
+                ],
+                "equipDesc": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control",
+                "equipPrice": 3190,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 117,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe princess who departed from her homeland marveled at the snow-covered plum blossoms, standing proudly amidst the harsh Winter Kingdom.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Group CC",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91351,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Impact\u003c/color\u003e\nCreates a frost field within a range of 600, slowing enemies immensely. After 0.75s, deals 100–200 magical damage and freezes enemies for 0.75s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 91344,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Ice Armor\u003c/color\u003e\nResistance +10%. When affected by hard crowd control effects other than suppression, grants a shield that negates (\u003ccolor=#3cb088\u003e10% {hp}\u003c/color\u003e) damage for 5s.\n({cd}: 15s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1128,
+                "equipName": "Deepfrost Siege",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+                "preEquipIds": [
+                    1122,
+                    1129
+                ],
+                "equipDesc": "PATK +70, ASPD +25%, HP +750\nBAs slow",
+                "equipPrice": 2040,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 34,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Slows on hit",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 70
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 250000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 750
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911280,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Deepfrost\u003c/color\u003e\nBasic Attacks and skills reduce Movement Speed by 5%–10% for 1.5s, for up to 2 stacks."
+                    },
+                    {
+                        "id": 911282,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Frostbite\u003c/color\u003e\nBasic Attacks and skills deal an extra 135–270 (\u003ccolor=#ff6600\u003e+45% extra {ad}\u003c/color\u003e) physical damage. ({cd}: 3s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1131,
+                "equipName": "Starbreaker",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+                "preEquipIds": [
+                    1122,
+                    1115
+                ],
+                "equipDesc": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank",
+                "equipPrice": 2080,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 17,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Anti-tank",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 700
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Sunder\u003c/color\u003e\nGrants 30% Physical Pierce."
+                    }
+                ]
+            },
+            {
+                "equipId": 1723,
+                "equipName": "Crimson Shadow - Howl",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1748.png",
+                "preEquipIds": [
+                    1711,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nDPS aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 123,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Group speedup",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Rally\u003c/color\u003e\nTeammates within range gradually gain a Movement Speed over 2s, up to a max increase of 100%–200% for 5s. Teammates that enter the skill's range after activation gain the current Movement Speed boost. The effect is reduced to a 20% Movement Speed increase upon attacking or being attacked by enemy heroes.\n({cd}: 90s)\n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91737,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Agility Aura\u003c/color\u003e\nGrants 20% Attack Speed and 15% Cooldown Reduction, and restores 15 Mana every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Max Health by 400–800 \nIncreases Main Attack Stat by 25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Crimson Shadow roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1132,
+                "equipName": "Bloodweeper",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+                "preEquipIds": [
+                    1158,
+                    1122
+                ],
+                "equipDesc": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal",
+                "equipPrice": 2000,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 22,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Physical Lifesteal",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 85
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 250000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911320,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Recuperation\u003c/color\u003e\nGrants 25% Physical skill Lifesteal."
+                    }
+                ]
+            },
+            {
+                "equipId": 1134,
+                "equipName": "Master Sword",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+                "preEquipIds": [
+                    1116,
+                    11211
+                ],
+                "equipDesc": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs",
+                "equipPrice": 2100,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 24,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Enhances BA",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 55
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 600
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91134,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Savagery\u003c/color\u003e\nCasting a skill increases \u003ccolor=#6bc872\u003eMovement Speed by 12%\u003c/color\u003e for 2s and the \u003ccolor=#ff6600\u003ephysical damage\u003c/color\u003e of the next Basic Attack within 5s by (\u003ccolor=#ff6600\u003e80% {ad}\u003c/color\u003e).\n({cd}: 3s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1135,
+                "equipName": "Sparkforged Dagger",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+                "preEquipIds": [
+                    1129,
+                    1123
+                ],
+                "equipDesc": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA",
+                "equipPrice": 2040,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 25,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Chain lightning BA",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 40
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 350000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911350,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Spark\u003c/color\u003e\nBasic Attacks deal 40–80 extra magical damage. Every third Basic Attack unleashes chain lightning that deals 160–400 magical damage."
+                    }
+                ]
+            },
+            {
+                "equipId": 1136,
+                "equipName": "Shadow Ripper",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+                "preEquipIds": [
+                    1116,
+                    1123
+                ],
+                "equipDesc": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD",
+                "equipPrice": 2040,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 26,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Crits boost ASPD",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 45
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 350000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91136,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Storm Strike\u003c/color\u003e\nAfter landing a critical hit, increases Attack Speed by 20% and Movement Speed by 5% for 3.5s."
+                    }
+                ]
+            },
+            {
+                "equipId": 1137,
+                "equipName": "Axe of Torment",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+                "preEquipIds": [
+                    1124,
+                    1122
+                ],
+                "equipDesc": "PATK +80, CDR +10%, HP +500\nAnti-squishy",
+                "equipPrice": 2090,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 27,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Anti-squishy",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91137,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Sever\u003c/color\u003e\nIncreases Physical Pierce by \u003ccolor=#ff6600\u003e90–180\u003c/color\u003e."
+                    }
+                ]
+            },
+            {
+                "equipId": 1335,
+                "equipName": "Succubus Cloak",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+                "preEquipIds": [
+                    1323,
+                    1323
+                ],
+                "equipDesc": "MDEF +300, HP +1,100\nNegates magical damage",
+                "equipPrice": 2020,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 105,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Negates magical damage",
+                "equipEffects": [
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 300
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1100
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91335,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Mist Veil\u003c/color\u003e\nGrants a shield that negates 400–800 (\u003ccolor=#3cb088\u003e+7% extra {hp}\u003c/color\u003e) magical damage every 15s."
+                    },
+                    {
+                        "id": 913351,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Succubus\u003c/color\u003e\nConverts 15% of extra Magical Defense into Physical Defense."
+                    }
+                ]
+            },
+            {
+                "equipId": 1138,
+                "equipName": "Overlord's Might",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+                "preEquipIds": [
+                    1121,
+                    1121
+                ],
+                "equipDesc": "PATK +150, CDR +5%\nHigh-damage attack",
+                "equipPrice": 2540,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 28,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "High-damage attack",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911380,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Siege Breaker\u003c/color\u003e\nDeals 30% extra damage to enemies below 50% Health."
+                    }
+                ]
+            },
+            {
+                "equipId": 1156,
+                "equipName": "Haste - Sunpool",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+                "preEquipIds": [
+                    1141,
+                    1349
+                ],
+                "equipDesc": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range",
+                "equipPrice": 3320,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 52,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe archer, with honor in his heart, remembered the arrow he couldn't bear to miss and the moonlight that spilled on the fallen girl.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts attack range",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 40
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 911561,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Daybreak\u003c/color\u003e\nIncreases Basic Attack range by 125 and Movement Speed by 40% for 5s, during which Basic Attacks deal 30% extra damage to 1 more nearby enemy. \u003ccolor=#4f6f95\u003eFor melee heroes, only the Movement Speed bonus takes effect.\u003c/color\u003e\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Precision\u003c/color\u003e\nBasic Attack Damage +25 \u003ccolor=#4f6f95\u003e(doubled for ranged heroes)\u003c/color\u003e."
+                    }
+                ]
+            },
+            {
+                "equipId": 1141,
+                "equipName": "Sunchaser",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+                "preEquipIds": [
+                    1154,
+                    1115
+                ],
+                "equipDesc": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range",
+                "equipPrice": 2100,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 30,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts attack range",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 40
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91040,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Daybreak\u003c/color\u003e\nIncreases Basic Attack range by 125 \u003ccolor=#4f6f95\u003e(ranged heroes only)\u003c/color\u003e and Movement Speed by 20% for 5s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Precision\u003c/color\u003e\nBasic Attack Damage +25 \u003ccolor=#4f6f95\u003e(doubled for ranged heroes)\u003c/color\u003e."
+                    }
+                ]
+            },
+            {
+                "equipId": 11210,
+                "equipName": "Mortal Punisher",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+                "preEquipIds": [
+                    1158,
+                    1129
+                ],
+                "equipDesc": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen",
+                "equipPrice": 2080,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 35,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Lowers Health regen",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 200000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91158,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Revive\u003c/color\u003e\nRecovers 375–750 Health over 5s when Health drops below 30%.\n({cd}: 20s)"
+                    },
+                    {
+                        "id": 911300,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Imperil\u003c/color\u003e\nWhen a Basic Attack or skill hits an enemy, it reduces their \u003ccolor=#2bc6ff\u003eHealth recovery and Lifesteal by 35%\u003c/color\u003e. Lasts 2.5s."
+                    }
+                ]
+            },
+            {
+                "equipId": 11311,
+                "equipName": "Pure Sky",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+                "preEquipIds": [
+                    1124,
+                    1345
+                ],
+                "equipDesc": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction",
+                "equipPrice": 2140,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 36,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Temp. damage reduction",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91000,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Dispel\u003c/color\u003e\nGrants 30% damage reduction for 3s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 911311,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Maim\u003c/color\u003e\nSkills slow the first enemy hero hit by 10%–20% and reduce damage taken from that enemy by 20% for 3s.\n({cd}: 8s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1424,
+                "equipName": "Boots of the Arcane",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+                "preEquipIds": [
+                    1411,
+                    1212
+                ],
+                "equipDesc": "MSPD +50, MP +400\nMagical Pierce",
+                "equipPrice": 700,
+                "equipType": 4,
+                "equipLevel": 2,
+                "equipShowId": 133,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Magical Pierce",
+                "equipEffects": [
+                    {
+                        "effectType": 100,
+                        "valueType": 1,
+                        "value": 400
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914240,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift\u003c/color\u003e\nGrants 50 Movement Speed."
+                    },
+                    {
+                        "id": 914245,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Magical Mastery\u003c/color\u003e\nGrants 60–120 Magical Pierce. Restores 10 Mana every 5s."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nCan switch to another pair of upgraded footwear free of charge. Cooldown: 5 min.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1218,
+                "equipName": "Primordial Crystal",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1218.png",
+                "preEquipIds": [],
+                "equipDesc": "CDR +5%",
+                "equipPrice": 300,
+                "equipType": 2,
+                "equipLevel": 1,
+                "equipShowId": 58,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1157,
+                "equipName": "Immovable - Sky Dome",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+                "preEquipIds": [
+                    11311,
+                    1349
+                ],
+                "equipDesc": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction",
+                "equipPrice": 3280,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 53,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe adrift and fallen king made his ultimate choice amidst the uncertainty between light and darkness.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Temp. damage reduction",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91157,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Dispel\u003c/color\u003e\nRemoves all crowd control effects. Increases damage reduction by 35% and Movement Speed by 30% with terrain ignored for 3s. Defeating an enemy hero refreshes the effect duration.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 911311,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Maim\u003c/color\u003e\nSkills slow the first enemy hero hit by 10%–20% and reduce damage taken from that enemy by 20% for 3s.\n({cd}: 8s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1155,
+                "equipName": "Daybreaker's Virtue",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+                "preEquipIds": [
+                    1154,
+                    1129
+                ],
+                "equipDesc": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen",
+                "equipPrice": 2570,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 48,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Great for marksmen",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 75
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 300000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 150000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Sunder\u003c/color\u003e\n\u003ccolor=#ff6600\u003ePhysical Pierce +15%\u003c/color\u003e \u003ccolor=#4f6f95\u003e(doubled for ranged heroes)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Daybreaker\u003c/color\u003e\nBasic Attack Damage +25 \u003ccolor=#4f6f95\u003e(doubled for ranged heroes)\u003c/color\u003e."
+                    }
+                ]
+            },
+            {
+                "equipId": 1154,
+                "equipName": "Cloud Piercer",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1154.png",
+                "preEquipIds": [
+                    1112,
+                    1113
+                ],
+                "equipDesc": "Crit Rate +12%, ASPD +15%",
+                "equipPrice": 800,
+                "equipType": 1,
+                "equipLevel": 2,
+                "equipShowId": 15,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 120000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1159,
+                "equipName": "Tempest",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+                "preEquipIds": [
+                    1129,
+                    11211
+                ],
+                "equipDesc": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage",
+                "equipPrice": 2080,
+                "equipType": 1,
+                "equipLevel": 3,
+                "equipShowId": 50,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Stacks Attack Speed \u0026 Movement Speed",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 300000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 600
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911590,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Tempest\u003c/color\u003e\nBasic Attack and skill hits increase Attack Speed, Movement Speed, and damage by 2% for 2.5s, stacking up to 5 times."
+                    }
+                ]
+            },
+            {
+                "equipId": 1217,
+                "equipName": "Mystic Page",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1217.png",
+                "preEquipIds": [],
+                "equipDesc": "Magical Lifesteal +8%",
+                "equipPrice": 300,
+                "equipType": 2,
+                "equipLevel": 1,
+                "equipShowId": 57,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1214,
+                "equipName": "Sage's Codex",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1214.png",
+                "preEquipIds": [
+                    1211,
+                    1218
+                ],
+                "equipDesc": "MATK +60, CDR +7.5%",
+                "equipPrice": 800,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 57,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 60
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1426,
+                "equipName": "Boots of Deftness",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1426.png",
+                "preEquipIds": [
+                    1411,
+                    1311
+                ],
+                "equipDesc": "HP +300, MSPD +70\nExtra MSPD",
+                "equipPrice": 700,
+                "equipType": 4,
+                "equipLevel": 2,
+                "equipShowId": 135,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Extra Movement Speed",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 300
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914260,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift II\u003c/color\u003e\nGrants 70 Movement Speed."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Divine Wind\u003c/color\u003e\nIncreases Movement Speed by 35–70 when out of combat for 5s."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nCan switch to another pair of upgraded footwear free of charge. Cooldown: 5 min.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1221,
+                "equipName": "Grand Staff",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1221.png",
+                "preEquipIds": [
+                    1211,
+                    1211
+                ],
+                "equipDesc": "Magical Attack",
+                "equipPrice": 820,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 59,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 120
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1222,
+                "equipName": "Blood Clan's Grimoire",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1222.png",
+                "preEquipIds": [
+                    1211,
+                    1217
+                ],
+                "equipDesc": "MATK +60, Magical Lifesteal +12%",
+                "equipPrice": 800,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 60,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 60
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1224,
+                "equipName": "Stone of Sorcery",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1224.png",
+                "preEquipIds": [
+                    1211,
+                    11110
+                ],
+                "equipDesc": "MATK +60\nMSPD +7.5%",
+                "equipPrice": 800,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 62,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 60
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1227,
+                "equipName": "Ardent Dominion",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+                "preEquipIds": [
+                    1222,
+                    1224
+                ],
+                "equipDesc": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP",
+                "equipPrice": 2040,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 69,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Shield at low Health",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91227,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Mana Shield\u003c/color\u003e\nWhen Health drops below 30%, removes all crowd control effects and grants a shield that negates (500–1,000 + \u003ccolor=#f264ff\u003e100% {ap}\u003c/color\u003e + \u003ccolor=#3cb088\u003e7.5% extra {hp}\u003c/color\u003e) damage and increases Movement Speed by 30% for 4s.\n({cd}: 90s)."
+                    }
+                ]
+            },
+            {
+                "equipId": 1226,
+                "equipName": "Holy Grail",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
+                "preEquipIds": [
+                    1214,
+                    1317
+                ],
+                "equipDesc": "MATK +150, CDR +15%, HP +500\nRapid MP Regen",
+                "equipPrice": 2020,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 64,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Rapid Health \u0026 Mana Regen",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 150000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91226,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Mana Spring\u003c/color\u003e\nRestores 1.5% max Mana and 0.5% max Health per second. If Mana is full, restores an extra 0.5% max Health per second."
+                    }
+                ]
+            },
+            {
+                "equipId": 1231,
+                "equipName": "Void Staff",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+                "preEquipIds": [
+                    1243,
+                    1221
+                ],
+                "equipDesc": "MATK +210, HP +500, CDR +5%\nAnti-tank",
+                "equipPrice": 2040,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 71,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Anti-tank",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 210
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 50000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912310,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Devastation\u003c/color\u003e\n\u003ccolor=#f264ff\u003eMagical Pierce +45%\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1232,
+                "equipName": "Savant's Wrath",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+                "preEquipIds": [
+                    1221,
+                    1221
+                ],
+                "equipDesc": "\u003ccolor=#7FFFD4\u003eMATK\u003c/color\u003e +210\nGreatly boosts MATK",
+                "equipPrice": 2140,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 72,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Greatly boosts MATK",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 210
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912320,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Doom\u003c/color\u003e\n\u003ccolor=#f264ff\u003e{ap} +30%\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1235,
+                "equipName": "Mask of Agony",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+                "preEquipIds": [
+                    1243,
+                    1317
+                ],
+                "equipDesc": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage",
+                "equipPrice": 2080,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 75,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts skill damage",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912350,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Torment\u003c/color\u003e\nWhen a skill hits a target, deals magical damage equal to 3% of their current Health 4 times over 3s \u003ccolor=#4f6f95\u003e(damage capped at 200 against monsters)\u003c/color\u003e.\n({cd}: 3s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1233,
+                "equipName": "Scepter of Reverberation",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+                "preEquipIds": [
+                    1224,
+                    1221
+                ],
+                "equipDesc": "MATK +210, MSPD +7.5%\nSkill hits explode",
+                "equipPrice": 2100,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 73,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Skill hits trigger explosions",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 210
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912330,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Echo\u003c/color\u003e\nTriggers an explosion when landing a skill hit, dealing (140–280 + \u003ccolor=#f264ff\u003e28% {ap}\u003c/color\u003e) magical damage.\n({cd}: 5s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1236,
+                "equipName": "Staves of Sorcery",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+                "preEquipIds": [
+                    1224,
+                    1243
+                ],
+                "equipDesc": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs",
+                "equipPrice": 2080,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 76,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Enhances BA",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 180
+                    },
+                    {
+                        "effectType": 100,
+                        "valueType": 1,
+                        "value": 300
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 600
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91236,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Savagery\u003c/color\u003e\nThe next Basic Attack within 5s after casting a skill deals (180–360 + \u003ccolor=#f264ff\u003e40% {ap}\u003c/color\u003e) extra magical damage.\n({cd}: 2.5s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1237,
+                "equipName": "Augur's Word",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+                "preEquipIds": [
+                    1221,
+                    1321
+                ],
+                "equipDesc": "MATK +140, MP +450, HP +900\nOffense \u0026 defense",
+                "equipPrice": 2150,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 77,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Offense \u0026 defense",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 140
+                    },
+                    {
+                        "effectType": 100,
+                        "valueType": 1,
+                        "value": 450
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91225,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hero's Reward\u003c/color\u003e\nLeveling up restores 20% of max Health and max Mana over 3s. After reaching max level, this effect triggers once every 45s."
+                    },
+                    {
+                        "id": 912373,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Augury\u003c/color\u003e\nGrants 50–100 (+\u003ccolor=#f264ff\u003e10% {ap}\u003c/color\u003e) Physical Defense and Magical Defense."
+                    }
+                ]
+            },
+            {
+                "equipId": 1238,
+                "equipName": "Sage's Tome",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+                "preEquipIds": [
+                    1221,
+                    1214
+                ],
+                "equipDesc": "MATK +350, CDR +10%\nGreat for mages",
+                "equipPrice": 2610,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 80,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Great for mages",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 350
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912388,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Enlightenment\u003c/color\u003e\nEvery 100 Magical Attack increases damage dealt by 0.5% and grants 0.5% damage reduction."
+                    }
+                ]
+            },
+            {
+                "equipId": 1239,
+                "equipName": "Splendor",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+                "preEquipIds": [
+                    1222,
+                    1214
+                ],
+                "equipDesc": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility",
+                "equipPrice": 2080,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 68,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Temp. invincibility",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91010,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Moonguard\u003c/color\u003e\nGrants immunity to all effects, but renders the user unable to move, attack, or use skills for 1.5s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1243,
+                "equipName": "Nebulon Wood",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1243.png",
+                "preEquipIds": [
+                    1211,
+                    1311
+                ],
+                "equipDesc": "MATK +60, HP +450",
+                "equipPrice": 840,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 67,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 60
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1240,
+                "equipName": "Insatiable Tome",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+                "preEquipIds": [
+                    1222,
+                    1222
+                ],
+                "equipDesc": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR",
+                "equipPrice": 2060,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 81,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Magical Lifesteal",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 750
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912400,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Arcane Conversion\u003c/color\u003e\nEvery 2% Magical Lifesteal grants an extra 1% Cooldown Reduction."
+                    }
+                ]
+            },
+            {
+                "equipId": 1234,
+                "equipName": "Frozen Breath",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+                "preEquipIds": [
+                    1221,
+                    1317
+                ],
+                "equipDesc": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow",
+                "equipPrice": 2100,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 82,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Slows on hit",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 180
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912410,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Deep Freeze\u003c/color\u003e\nWhen a Basic Attack or skill hits an enemy, it reduces their Movement Speed by 5–10% (for up to 2 stacks) for 1.5s."
+                    },
+                    {
+                        "id": 912414,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Frostbite\u003c/color\u003e\nBasic Attacks and skills deal an extra (75–150 + \u003ccolor=#f264ff\u003e15% {ap}\u003c/color\u003e) magical damage.\n({CD}: 3s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1244,
+                "equipName": "Breakthrough Robe",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+                "preEquipIds": [
+                    1243,
+                    1243
+                ],
+                "equipDesc": "MATK +120, HP +900\nConverts HP into Magical Pierce",
+                "equipPrice": 2120,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 78,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Converts Health into M. Pierce",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 120
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 912383,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Breakthrough\u003c/color\u003e\nGrants 20–40 (+\u003ccolor=#3cb088\u003e2% extra {hp}\u003c/color\u003e) Magical Attack, up to 100."
+                    },
+                    {
+                        "id": 912381,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Purge\u003c/color\u003e\nGrants 30–60 (+\u003ccolor=#3cb088\u003e3% extra {hp}\u003c/color\u003e) Magical Pierce, up to 150."
+                    }
+                ]
+            },
+            {
+                "equipId": 1341,
+                "equipName": "Frigid Charge",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+                "preEquipIds": [
+                    1325,
+                    1317
+                ],
+                "equipDesc": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control",
+                "equipPrice": 2030,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 112,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe outer covering of an ancient mechcraft war machine. Modified by Navenia mechsmiths for use as human armor.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Group CC",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91348,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Impact\u003c/color\u003e\nCreates a frost field within a range of 450, slowing enemies by 30%–60%. After 0.75s, deals 100–200 magical damage and freezes enemies for 0.75s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 91344,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Ice Armor\u003c/color\u003e\nResistance +10%. When affected by hard crowd control effects other than suppression, grants a shield that negates (\u003ccolor=#3cb088\u003e10% {hp}\u003c/color\u003e) damage for 5s.\n({cd}: 15s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1727,
+                "equipName": "Twilight Stream",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+                "preEquipIds": [
+                    1243,
+                    1214
+                ],
+                "equipDesc": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce",
+                "equipPrice": 2040,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 83,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eMade from the mystic liquid extracted by a weary traveler who strayed into the Misty Marshes. Reflected images of a deer and a bird are said to be seen in the water.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts Magical Pierce",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91996,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Purge\u003c/color\u003e\nDealing damage to a hero increases Magical Pierce by 20–40 for 4s, for up to 6 stacks."
+                    }
+                ]
+            },
+            {
+                "equipId": 1728,
+                "equipName": "Golden Blade",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+                "preEquipIds": [
+                    1221,
+                    1123
+                ],
+                "equipDesc": "MATK +150, ASPD +20%, MSPD +7.5%\nKeeps enhancing BA",
+                "equipPrice": 2070,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 84,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe divine blade began to gleam again as dusk settled upon the Eventide Cathedral. At that time, a prophecy came to spread—the goddess secluded deep in the forest will return to her people.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Keeps enhancing BA",
+                "equipEffects": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 917280,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Precision\u003c/color\u003e\nBasic Attack Damage +60"
+                    },
+                    {
+                        "id": 919970,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Excalibur\u003c/color\u003e\nWhen a Basic Attack hits a target, increases Attack Speed by 10% for 5s, and up to 2 stacks. When fully stacked, Basic Attacks deal (\u003ccolor=#f264ff\u003e30% {ap}\u003c/color\u003e) extra magical damage.\n({cd}: 0.2s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 12211,
+                "equipName": "Venomous Staff",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+                "preEquipIds": [
+                    1224,
+                    1214
+                ],
+                "equipDesc": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen",
+                "equipPrice": 2040,
+                "equipType": 2,
+                "equipLevel": 2,
+                "equipShowId": 84,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Lowers Health regen",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 240
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 911300,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Imperil\u003c/color\u003e\nWhen a Basic Attack or skill hits an enemy, it reduces their Health recovery and Lifesteal by 35%. Lasts 2.5s."
+                    }
+                ]
+            },
+            {
+                "equipId": 1242,
+                "equipName": "Enigma - Moon Goddess",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+                "preEquipIds": [
+                    1239,
+                    1349
+                ],
+                "equipDesc": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility",
+                "equipPrice": 3340,
+                "equipType": 2,
+                "equipLevel": 3,
+                "equipShowId": 85,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eIn that moment, the cold Luna concealed what little remained of her warmth in the long-forgotten name of her older brother.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Temp. invincibility",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91242,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Moonguard\u003c/color\u003e\nGrants immunity to all effects, but renders the user unable to move, attack, or use skills for 1.5s. When the effect wears off, grants a 60% Movement Speed bonus that diminishes over 2s and restores a total of (1,000 + \u003ccolor=#f264ff\u003e100% {ap}\u003c/color\u003e) Health.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1311,
+                "equipName": "Resilient Agate",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1311.png",
+                "preEquipIds": [],
+                "equipDesc": "Health",
+                "equipPrice": 300,
+                "equipType": 3,
+                "equipLevel": 1,
+                "equipShowId": 86,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 300
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 13211,
+                "equipName": "Mirror of Radiance",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/13211.png",
+                "preEquipIds": [
+                    1311,
+                    11110
+                ],
+                "equipDesc": "HP +450, MSPD +7.5%",
+                "equipPrice": 800,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 95,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 13212,
+                "equipName": "Stone of All Creation",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/13212.png",
+                "preEquipIds": [
+                    1312,
+                    1313
+                ],
+                "equipDesc": "PDEF +150, MDEF +150",
+                "equipPrice": 800,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 96,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 150
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1347,
+                "equipName": "Longnight Guardian",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+                "preEquipIds": [
+                    1323,
+                    13211
+                ],
+                "equipDesc": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage",
+                "equipPrice": 2020,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 109,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eDuring the eternal night of the Gorge, did any of the valiant vanguards recall the girl in the moonlight and the name they had long forgotten?\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Resists burst damage",
+                "equipEffects": [
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 210
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 913470,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guardian\u003c/color\u003e\nWhen taking damage exceeding 30% max Health within 3s, restores a total of (320 + \u003ccolor=#3cb088\u003e8% {hp}\u003c/color\u003e) Health over 3s.\n({cd}: 7s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1312,
+                "equipName": "Cloth Jerkin",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1312.png",
+                "preEquipIds": [],
+                "equipDesc": "PDEF +100",
+                "equipPrice": 275,
+                "equipType": 3,
+                "equipLevel": 1,
+                "equipShowId": 87,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 100
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1313,
+                "equipName": "Anti-magic Cloak",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1313.png",
+                "preEquipIds": [],
+                "equipDesc": "MDEF +100",
+                "equipPrice": 275,
+                "equipType": 3,
+                "equipLevel": 1,
+                "equipShowId": 88,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 100
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1321,
+                "equipName": "Belt of Might",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1321.png",
+                "preEquipIds": [
+                    1311,
+                    1311
+                ],
+                "equipDesc": "HP +900",
+                "equipPrice": 850,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 90,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1323,
+                "equipName": "Clandestine Cape",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1323.png",
+                "preEquipIds": [
+                    1311,
+                    1313
+                ],
+                "equipDesc": "MDEF +150, HP +450",
+                "equipPrice": 800,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 92,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1324,
+                "equipName": "Frosthold Targe",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1324.png",
+                "preEquipIds": [
+                    1312,
+                    1218
+                ],
+                "equipDesc": "PDEF +150, CDR +7.5%",
+                "equipPrice": 750,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 93,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1325,
+                "equipName": "Protector's Cuirass",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1325.png",
+                "preEquipIds": [
+                    1312,
+                    1311
+                ],
+                "equipDesc": "PDEF +150, HP +450",
+                "equipPrice": 800,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 94,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1711,
+                "equipName": "Crimson Shadow",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1721.png",
+                "preEquipIds": [
+                    1701,
+                    1311
+                ],
+                "equipDesc": "HP +500, MSPD +5%\nDPS aura",
+                "equipPrice": 850,
+                "equipType": 7,
+                "equipLevel": 2,
+                "equipShowId": 118,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "DPS aura",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Agility Aura\u003c/color\u003e\nGrants 12% Attack Speed and 9% Cooldown Reduction, and restores 10 Mana every 5s. Teammates within a range of 800 gain 50% of this effect."
+                    },
+                    {
+                        "id": 91731,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases max Health by 200–400.\nIncreases main attack stat by 15–30.\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91744,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 5 EXP, and grants 5 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 450 Gold can be picked up.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1327,
+                "equipName": "Spikemail",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+                "preEquipIds": [
+                    1345,
+                    1325
+                ],
+                "equipDesc": "PATK +45, PDEF +300, HP +700\nReflects damage",
+                "equipPrice": 2020,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 98,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Reflects damage",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 45
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 300
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 700
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91327,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Countersiege\u003c/color\u003e\nEnters the Countersiege state for 3s, reflecting 35% of damage taken back at the enemy as true damage.\n\u003ccolor=#4f6f95\u003e(Damage diminishes with distance, down to 50%.)\u003c/color\u003e\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1328,
+                "equipName": "Blood Rage",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+                "preEquipIds": [
+                    1121,
+                    1321
+                ],
+                "equipDesc": "PATK +75, HP +900\nTrades HP for shield",
+                "equipPrice": 2180,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 99,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eA piece of equipment made for Dian Wei by a Blood Clan craftsman. It absorbs its wearer's Health and converts it into formidable strength.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Grants temporary shield",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 75
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 92009,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Blood Fury\u003c/color\u003e\nGradually depletes 30% of current Health while progressively granting a shield that negates damage equal to \u003ccolor=#3cb088\u003e40% of {hp}\u003c/color\u003e over 4s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 913281,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Apoplexy\u003c/color\u003e\nBasic Attacks deal an extra (\u003ccolor=#3cb088\u003e1.5% {hp}\u003c/color\u003e) physical damage. When Health drops below 50%, this damage increases by 25%–50%."
+                    }
+                ]
+            },
+            {
+                "equipId": 1747,
+                "equipName": "Crimson Shadow - Starspring",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1747.png",
+                "preEquipIds": [
+                    1711,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nDPS aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 122,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Restores teammate Health \u0026 Mana",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Starburst\u003c/color\u003e\nLinks with a teammate (by default, the teammate with the lowest Health) within range for 5s, recovering (500–1,060 + \u003ccolor=#3cb088\u003e20% {hp}\u003c/color\u003e) Health and 25% of max Mana to both self and that teammate for the duration. The link will be broken when it exceeds a certain distance. Recovery effects decrease to 20% upon attacking or being attacked. 1 use of Starburst is gained every 50s, and up to 2 can be stored at a time.\n({cd}: 5s)\n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91737,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Agility Aura\u003c/color\u003e\nGrants 20% Attack Speed and 15% Cooldown Reduction, and restores 15 Mana every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Max Health by 400–800 \nIncreases Main Attack Stat by 25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Crimson Shadow roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1331,
+                "equipName": "Blazing Cape",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+                "preEquipIds": [
+                    1325,
+                    1323
+                ],
+                "equipDesc": "PDEF +150, MDEF +150, HP +1,100\nArea burning imperil",
+                "equipPrice": 2040,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 101,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Burns nearby enemies",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1100
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91331,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Conflagration\u003c/color\u003e\nBurns enemies within a range of 375 every second, dealing (\u003ccolor=#6bc872\u003e1.5% {hp}\u003c/color\u003e) \u003ccolor=#f264ff\u003emagical damage\u003c/color\u003e. Deals double damage to minions and monsters."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Imperil\u003c/color\u003e\nWhen an enemy is inflicted with a burning effect, it \u003ccolor=#2bc6ff\u003ereduces their Health recovery and Lifesteal by 35%\u003c/color\u003e. Lasts 2.5s."
+                    }
+                ]
+            },
+            {
+                "equipId": 1332,
+                "equipName": "Overlord's Platemail",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+                "preEquipIds": [
+                    1321,
+                    1321
+                ],
+                "equipDesc": "HP +1,800, PDEF +160, MDEF +80\nExtra HP",
+                "equipPrice": 2450,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 102,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Extra Health",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1800
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 913323,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Fated\u003c/color\u003e\nIncreases \u003ccolor=#6bc872\u003e{hp} by 4%\u003c/color\u003e."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Recovery\u003c/color\u003e\nRecovers \u003ccolor=#6bc872\u003e0.5% {hp}\u003c/color\u003e every second. Recovery effect is doubled after 3s if not attacked by an enemy hero or tower."
+                    }
+                ]
+            },
+            {
+                "equipId": 1333,
+                "equipName": "Ominous Premonition",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+                "preEquipIds": [
+                    1325,
+                    1325
+                ],
+                "equipDesc": "PDEF +300, HP +1,200\nSlows attackers",
+                "equipPrice": 2020,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 103,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Slows attackers",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 300
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91333,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Cold Steel\u003c/color\u003e\nWhen taking damage, reduces the attacker's Attack Speed by 20%–40% and Movement Speed by 7.5%–15% for 2.5s.\n({cd}: 3s per target)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1334,
+                "equipName": "Eye of the Phoenix",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+                "preEquipIds": [
+                    1321,
+                    1323
+                ],
+                "equipDesc": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen",
+                "equipPrice": 2020,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 104,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts Health regen",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 180
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1350
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 913340,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Bloodline\u003c/color\u003e\nIncreases Health recovery by 5% for every 10% of Health lost."
+                    }
+                ]
+            },
+            {
+                "equipId": 1336,
+                "equipName": "Glacial Buckler",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+                "preEquipIds": [
+                    1317,
+                    1324
+                ],
+                "equipDesc": "CDR +20%, HP +600, PDEF +240\nGroup damage \u0026 slow",
+                "equipPrice": 2040,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 106,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Group damage \u0026 slow",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 200000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 240
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 600
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91336,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Frost Shock\u003c/color\u003e\nTriggers an ice blast when losing 10% of current Health from a single attack, dealing 130–260 magical damage to enemies within range and reducing their Attack Speed by 15% and Movement Speed by 15%–30% for 2s.\n({cd}: 2s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1411,
+                "equipName": "Lightfoot Shoes",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1411.png",
+                "preEquipIds": [],
+                "equipDesc": "Movement Speed",
+                "equipPrice": 250,
+                "equipType": 4,
+                "equipLevel": 1,
+                "equipShowId": 129,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914110,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift\u003c/color\u003e\n\u003ccolor=#6bc872\u003eMovement Speed +30\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1337,
+                "equipName": "Sage's Sanctuary",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+                "preEquipIds": [
+                    13212,
+                    1321
+                ],
+                "equipDesc": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot",
+                "equipPrice": 2280,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 107,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe graveyard of swords is overgrown with weeds. The dusty bow is entangled by vines. Ancient whispers have echoed across the Misty Marshes for ages—who is it that wishes to resurrect their deceased loved one?\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Resurrect on the spot",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 50000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91337,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Revive\u003c/color\u003e\nResurrects the wearer 2s after dying and restores 2,000–3,000 Health. This effect can be triggered up to 2 times per match.\n({cd}: 150s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1338,
+                "equipName": "Cuirass of Savagery",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+                "preEquipIds": [
+                    1345,
+                    1321
+                ],
+                "equipDesc": "PATK +35, PDEF +210, HP +900\nOffense \u0026 defense",
+                "equipPrice": 2050,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 108,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Offense \u0026 defense",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 210
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91338,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Fearless\u003c/color\u003e\nWhen taking damage, increases own damage and Movement Speed by 1% for 3s, stacking up to 10 times \u003ccolor=#4f6f95\u003e(gains 2 stacks when hit by enemy heroes)\u003c/color\u003e."
+                    }
+                ]
+            },
+            {
+                "equipId": 1345,
+                "equipName": "Nettle Gauntlet",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1345.png",
+                "preEquipIds": [
+                    1312,
+                    1111
+                ],
+                "equipDesc": "PDEF +150, PATK +35\nBalanced attack \u0026 defense",
+                "equipPrice": 750,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 95,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Offense \u0026 defense",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 35
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            },
+            {
+                "equipId": 1522,
+                "equipName": "Patrol Axe",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1522.png",
+                "preEquipIds": [
+                    1511
+                ],
+                "equipDesc": "Monster kills boost Health",
+                "equipPrice": 700,
+                "equipType": 5,
+                "equipLevel": 2,
+                "equipShowId": 140,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Monster kills boost Health",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 400
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91506,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 30% more EXP and 20% more Gold from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9152239,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes 70–140 + (\u003ccolor=#3cb088\u003e0.45% of the target's {hp}\u003c/color\u003e) physical damage every 0.5s for 2s (ranged attacks deal 50% of this damage, and heroes only take 10% damage)."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases max Health by 30 whenever you or a teammate within a range of 700 units kills a monster, for up to 15 stacks."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 04:00: Grants 50% Gold and EXP from minions and monsters rather than the normal amount distributed to the team.\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1349,
+                "equipName": "Pearl of Origin",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1349.png",
+                "preEquipIds": [],
+                "equipDesc": "PDEF +150, MDEF +150",
+                "equipPrice": 800,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 113,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe synergy between the power of resurrection and the Primals gave birth to the Pearl of Origin. Put it to your ear, and you may hear the primordial whispers of the ultimate origin.\u003c/color\u003e",
+                "isTopEquip": false,
+                "equipDescLabel": "Equipment evolution",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 150
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "Sage's Sanctuary has been damaged, but its energy core can still enhance equipment under the influence of the Primals. \u003ccolor=#4f6f95\u003e(Purchasable after 20m.)\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 13310,
+                "equipName": "Frostscar's Embrace",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+                "preEquipIds": [
+                    1345,
+                    1324
+                ],
+                "equipDesc": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow",
+                "equipPrice": 2060,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 115,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Enhanced BAs slow",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 60
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 300
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91340,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Savagery\u003c/color\u003e\nThe next Basic Attack within 5s after using a skill deals an extra 210–420 physical damage to enemies within range and slows them by 15%–30% for 0.5s \u003ccolor=#4f6f95\u003e(slow effect halved for ranged attacks)\u003c/color\u003e.\n({cd}: 1.2s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1350,
+                "equipName": "Ravage - Phantom",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+                "preEquipIds": [
+                    1328,
+                    1349
+                ],
+                "equipDesc": "PATK +75, HP +900\nTrades HP for shield",
+                "equipPrice": 3350,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 116,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe ambitious one who nourished his ideals with blood, awakened the land of the dead with a thunderous rebirth atop the Bronze Bird Terrace.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Temp. shield \u0026 PATK",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 75
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [
+                    {
+                        "id": 91350,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Blood Fury\u003c/color\u003e\nGradually depletes 30% of current Health while progressively granting a shield that negates damage equal to \u003ccolor=#3cb088\u003e50% of {hp}\u003c/color\u003e, and deals \u003ccolor=#3cb088\u003e4% of {hp}\u003c/color\u003e as magical damage (capped at 200 against monsters) to surrounding enemies per second for 4s.\n({cd}: 75s)"
+                    }
+                ],
+                "passiveSkills": [
+                    {
+                        "id": 913501,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Apoplexy\u003c/color\u003e\nBasic Attacks deal an extra (\u003ccolor=#3cb088\u003e1.5% {hp}\u003c/color\u003e) physical damage. When Health drops below 50%, the damage increases by 37.5%–75%."
+                    }
+                ]
+            },
+            {
+                "equipId": 1353,
+                "equipName": "Dawnlight",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+                "preEquipIds": [
+                    1324,
+                    1321
+                ],
+                "equipDesc": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage",
+                "equipPrice": 2040,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 103,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Shields on dealing damage",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 210
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 900
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91353,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Firstlight\u003c/color\u003e\nWhen dealing damage to enemy heroes with Basic Attacks or skills, grants a shield that negates (250–500 + \u003ccolor=#3cb088\u003e4% {hp}\u003c/color\u003e) damage to self and the nearby teammate with the lowest Health for 3s. When no teammates are nearby, shield value increases by 50%.\n(Melee/Ranged {cd}: 10/12.5s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1714,
+                "equipName": "Guardian",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1724.png",
+                "preEquipIds": [
+                    1701,
+                    1311
+                ],
+                "equipDesc": "HP +500, MSPD +5%\nSurvivability aura",
+                "equipPrice": 850,
+                "equipType": 7,
+                "equipLevel": 2,
+                "equipShowId": 117,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Survivability aura",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 500
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guardian Aura\u003c/color\u003e\nGrants 36–72 Physical Defense and Magical Defense, and restores 0.4% {hp} every 5s. Teammates within a range of 800 gain 50% of this effect."
+                    },
+                    {
+                        "id": 91733,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases max Health by 200–400.\nIncreases main attack stat by 15–30.\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91744,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 5 EXP, and grants 5 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 450 Gold can be picked up.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1725,
+                "equipName": "Guardian - Starspring",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1752.png",
+                "preEquipIds": [
+                    1714,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nSurvivability aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 122,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Restores teammate Health \u0026 Mana",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Starburst\u003c/color\u003e\nLinks with a teammate (by default, the teammate with the lowest Health) within range for 5s, recovering (500–1,060 + \u003ccolor=#3cb088\u003e20% {hp}\u003c/color\u003e) Health and 25% of max Mana to both self and that teammate for the duration. The link will be broken when it exceeds a certain distance. Recovery effects decrease to 20% upon attacking or being attacked. 1 use of Starburst is gained every 50s, and up to 2 can be stored at a time.\n({cd}: 5s)\n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91739,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guardian Aura\u003c/color\u003e\nGrants 65–130 Physical Defense and Magical Defense, and restores 0.6% {hp} every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nMax Health +400–800 \nMain Attack Stat +25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Guardian roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1721,
+                "equipName": "Crimson Shadow - Redemption",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+                "preEquipIds": [
+                    1711,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nDPS aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 121,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Group shield",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Rescue\u003c/color\u003e\nGrants a shield that negates (240–480 + \u003ccolor=#3cb088\u003e10%{hp}\u003c/color\u003e) damage to teammates within range for 4s.\n({cd}: 60s)\n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91737,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Agility Aura\u003c/color\u003e\nGrants 20% Attack Speed and 15% Cooldown Reduction, and restores 15 Mana every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Max Health by 400–800 \nIncreases Main Attack Stat by 25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Crimson Shadow roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1737,
+                "equipName": "Crimson Shadow - Radiance",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+                "preEquipIds": [
+                    1711,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nDPS aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 124,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Area damage \u0026 vision",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Mirror Domain\u003c/color\u003e\nReleases a scouting light wave that deals damage 4 times to enemies within a range of 1,200, each dealing damage equal to 3% of current Health and slowing them by 25%–50%. The scouting light remains within range for 2s, providing visibility and exposing stealth units, while also dealing damage and slowing enemies.\n({cd}: 75s. If no targets are hit, 75% of the {cd} will be restored.) \n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91737,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Agility Aura\u003c/color\u003e\nGrants 20% Attack Speed and 15% Cooldown Reduction, and restores 15 Mana every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Max Health by 400–800 \nIncreases Main Attack Stat by 25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Crimson Shadow roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1724,
+                "equipName": "Guardian - Redemption",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+                "preEquipIds": [
+                    1714,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nSurvivability aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 121,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Group shield",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Rescue\u003c/color\u003e\nGrants a shield that negates (240–480 + \u003ccolor=#3cb088\u003e10%{hp}\u003c/color\u003e) damage to teammates within range for 4s.\n({cd}: 60s)\n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91739,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guardian Aura\u003c/color\u003e\nGrants 65–130 Physical Defense and Magical Defense, and restores 0.6% {hp} every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nMax Health +400–800 \nMain Attack Stat +25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Guardian roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1753,
+                "equipName": "Guardian - Howl",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1753.png",
+                "preEquipIds": [
+                    1714,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nSurvivability aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 123,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Group speedup",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Rally\u003c/color\u003e\nTeammates within range gradually gain a Movement Speed over 2s, up to a max increase of 100%–200% for 5s. Teammates that enter the skill's range after activation gain the current Movement Speed boost. The effect is reduced to a 20% Movement Speed increase upon attacking or being attacked by enemy heroes.\n({cd}: 90s)\n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91739,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guardian Aura\u003c/color\u003e\nGrants 65–130 Physical Defense and Magical Defense, and restores 0.6% {hp} every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nMax Health +400–800 \nMain Attack Stat +25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Guardian roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1754,
+                "equipName": "Guardian - Radiance",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1754.png",
+                "preEquipIds": [
+                    1714,
+                    1321
+                ],
+                "equipDesc": "HP +1,200, MSPD +7.5%\nSurvivability aura",
+                "equipPrice": 2080,
+                "equipType": 7,
+                "equipLevel": 3,
+                "equipShowId": 124,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Area damage \u0026 vision",
+                "equipEffects": [
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 75000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91816,
+                        "name": "\u003ccolor=#ffffff\u003eActive - Mirror Domain\u003c/color\u003e\nReleases a scouting light wave that deals damage 4 times to enemies within a range of 1,200, each dealing damage equal to 3% of current Health and slowing them by 25%–50%. The scouting light remains within range for 2s, providing visibility and exposing stealth units, while also dealing damage and slowing enemies.\n({cd}: 75s. If no targets are hit, 75% of the {cd} will be restored.) \n\u003ccolor=#4f6f95\u003eRoaming equipment active skill cooldown is shared by the team.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91739,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guardian Aura\u003c/color\u003e\nGrants 65–130 Physical Defense and Magical Defense, and restores 0.6% {hp} every 5s. Teammates within a range of 800 gain 50% of this effect.\n\n\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nMax Health +400–800 \nMain Attack Stat +25–50\n\u003ccolor=#4f6f95\u003e(1 main attack stat = 1 Physical Attack or 2 Magical Attack)\u003c/color\u003e"
+                    },
+                    {
+                        "id": 91745,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Guerrilla\u003c/color\u003e\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003eWielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 917739,
+                        "name": "\u003ccolor=#4f6f95\u003eCan quickly switch between Guardian roaming equipment at no cost ({cd} 300s).\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1421,
+                "equipName": "Boots of Fortitude",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+                "preEquipIds": [
+                    1411,
+                    1312
+                ],
+                "equipDesc": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage",
+                "equipPrice": 700,
+                "equipType": 4,
+                "equipLevel": 2,
+                "equipShowId": 130,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Reduces physical damage",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 50
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914212,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift\u003c/color\u003e\nGrants 50 Movement Speed."
+                    },
+                    {
+                        "id": 914211,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Sanctuary\u003c/color\u003e\nReduces physical damage taken by 6%–12%."
+                    },
+                    {
+                        "id": 914210,
+                        "name": "\u003ccolor=#4f6f95\u003e\nCan switch to another pair of upgraded footwear free of charge. Cooldown: 5 min.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1422,
+                "equipName": "Boots of Resistance",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+                "preEquipIds": [
+                    1411,
+                    1313
+                ],
+                "equipDesc": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control",
+                "equipPrice": 700,
+                "equipType": 4,
+                "equipLevel": 2,
+                "equipShowId": 131,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Shortens CC",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 100
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914220,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift\u003c/color\u003e\nGrants 50 Movement Speed."
+                    },
+                    {
+                        "id": 914221,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Tough\u003c/color\u003e\nGrants 25% Resistance."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nCan switch to another pair of upgraded footwear free of charge. Cooldown: 5 min.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1423,
+                "equipName": "Boots of Tranquility",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+                "preEquipIds": [
+                    1411,
+                    1218
+                ],
+                "equipDesc": "CDR +15%, MSPD +50\nSpeeds up skill cooldown",
+                "equipPrice": 700,
+                "equipType": 4,
+                "equipLevel": 2,
+                "equipShowId": 132,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Reduces Skill CD",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 150000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914230,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift\u003c/color\u003e\nGrants 50 Movement Speed."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Tranquility\u003c/color\u003e\nReduces the Cooldown of Common Skills by 10%–20%."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nCan switch to another pair of upgraded footwear free of charge. Cooldown: 5 min.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1425,
+                "equipName": "Boots of Dexterity",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+                "preEquipIds": [
+                    1411,
+                    1112
+                ],
+                "equipDesc": "ASPD +20%, MSPD +50\nBAs restore HP",
+                "equipPrice": 700,
+                "equipType": 4,
+                "equipLevel": 2,
+                "equipShowId": 134,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts ASPD",
+                "equipEffects": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 200000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 914250,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Swift\u003c/color\u003e\nGrants 50 Movement Speed."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Lightning Recovery\u003c/color\u003e\nBasic Attacks restore 20–40/30–60 Health for melee/ranged heroes."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nCan switch to another pair of upgraded footwear free of charge. Cooldown: 5m.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1511,
+                "equipName": "Hunting Knife",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1511.png",
+                "preEquipIds": [],
+                "equipDesc": "Increases jungling earnings \u0026 efficiency",
+                "equipPrice": 250,
+                "equipType": 5,
+                "equipLevel": 1,
+                "equipShowId": 136,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Speeds up jungling",
+                "equipEffects": [],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91572,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 20% more EXP from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9151939,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes \u003ccolor=#f264ff\u003e70–140\u003c/color\u003e \u003ccolor=#f264ff\u003emagical damage\u003c/color\u003e every 0.5s for 2s (ranged attacks only deal 50% damage)."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 04:00: Grants 50% Gold and EXP from minions and monsters rather than the normal amount distributed to the team.\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1521,
+                "equipName": "Guerrilla Machete",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1521.png",
+                "preEquipIds": [
+                    1511
+                ],
+                "equipDesc": "Monster kills boost MATK",
+                "equipPrice": 700,
+                "equipType": 5,
+                "equipLevel": 2,
+                "equipShowId": 138,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Monster kills boost MATK",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 40
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91573,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 30% more EXP and 20% more Gold from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9152139,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes 70–140 + (\u003ccolor=#3cb088\u003e0.45% of the target's {hp}\u003c/color\u003e) magical damage every 0.5s for 2s (ranged attacks deal 50% of this damage, and heroes only take 10% damage)."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Magical Attack by 6 when you or a teammate within a range of 700 units kills a monster, for up to 15 stacks."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 04:00: Grants 50% Gold and EXP from minions and monsters rather than the normal amount distributed to the team.\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1523,
+                "equipName": "Relentless Blade",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1523.png",
+                "preEquipIds": [
+                    1511
+                ],
+                "equipDesc": "Monster kills boost PATK",
+                "equipPrice": 700,
+                "equipType": 5,
+                "equipLevel": 2,
+                "equipShowId": 139,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "Monster kills boost PATK",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 25
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91575,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 30% more EXP and 20% more Gold from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9152339,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes 70–140 + (\u003ccolor=#3cb088\u003e0.45% of the target's {hp}\u003c/color\u003e) physical damage every 0.5s for 2s (ranged attacks deal 50% of this damage, and heroes only take 10% damage)."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Physical Attack by 3 when you or a teammate within a range of 700 units kills a monster, for up to 15 stacks."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 04:00: Grants 50% Gold and EXP from minions and monsters rather than the normal amount distributed to the team.\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1531,
+                "equipName": "Runeblade",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+                "preEquipIds": [
+                    1521,
+                    1214
+                ],
+                "equipDesc": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK",
+                "equipPrice": 2160,
+                "equipType": 5,
+                "equipLevel": 3,
+                "equipShowId": 142,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Monster kills boost MATK",
+                "equipEffects": [
+                    {
+                        "effectType": 2,
+                        "valueType": 1,
+                        "value": 130
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 100000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91563,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 30% more EXP and 20% more Gold from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9153139,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes 90–180 + (\u003ccolor=#3cb088\u003e0.6% of the target's {hp}\u003c/color\u003e) magical damage every 0.5s for 2s (ranged attacks deal 50% of this damage, and heroes only take 25% damage)."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Magical Attack by 6 and Cooldown Reduction by 0.2% whenever you or a teammate within a range of 700 units kills a monster, for up to 25 stacks."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1532,
+                "equipName": "Giant's Grip",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+                "preEquipIds": [
+                    1522,
+                    1317
+                ],
+                "equipDesc": "HP +1,200, MSPD +5%, CDR +5%\nMonster kills boost HP",
+                "equipPrice": 2160,
+                "equipType": 5,
+                "equipLevel": 3,
+                "equipShowId": 144,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Monster kills boost Health",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 50000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1200
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91507,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 30% more EXP and 20% more Gold from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9153239,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes 90–180 + (\u003ccolor=#3cb088\u003e0.6% of the target's {hp}\u003c/color\u003e) physical damage every 0.5s for 2s (ranged attacks deal 50% of this damage, and heroes only take 25% damage)."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases max Health by 30 and Cooldown Reduction by 0.2% whenever you or a teammate within a range of 700 units kills a monster, for up to 25 stacks."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1533,
+                "equipName": "Rapacious Bite",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+                "preEquipIds": [
+                    1523,
+                    1124
+                ],
+                "equipDesc": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK",
+                "equipPrice": 2160,
+                "equipType": 5,
+                "equipLevel": 3,
+                "equipShowId": 143,
+                "equipNarrativeDesc": "",
+                "isTopEquip": true,
+                "equipDescLabel": "Monster kills boost PATK",
+                "equipEffects": [
+                    {
+                        "effectType": 1,
+                        "valueType": 1,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 2,
+                        "value": 50000
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 91563,
+                        "name": "\u003ccolor=#FF6150\u003eRequires Smite to purchase. Reduces damage from monsters by 25% and grants 30% more EXP and 20% more Gold from monsters.\u003c/color\u003e"
+                    },
+                    {
+                        "id": 9153339,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Hunter\u003c/color\u003e\nWhen a Basic Attack or a skill hits a monster, it takes 90–180 + (\u003ccolor=#3cb088\u003e0.6% of the target's {hp}\u003c/color\u003e) physical damage every 0.5s for 2s (ranged attacks deal 50% of this damage, and heroes only take 25% damage)."
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Reward\u003c/color\u003e\nIncreases Physical Attack by 3 and Cooldown Reduction by 0.2% whenever you or a teammate within a range of 700 units kills a monster, for up to 25 stacks."
+                    },
+                    {
+                        "id": 915950,
+                        "name": "\u003ccolor=#4f6f95\u003e\nBefore 10:00: Deals 25% less damage to minions.\u003c/color\u003e"
+                    }
+                ]
+            },
+            {
+                "equipId": 1534,
+                "equipName": "Dragon's Rage",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+                "preEquipIds": [
+                    1321,
+                    1325
+                ],
+                "equipDesc": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage",
+                "equipPrice": 2040,
+                "equipType": 3,
+                "equipLevel": 3,
+                "equipShowId": 85,
+                "equipNarrativeDesc": "\u003ccolor=#4f6f95\u003eThe old man clad in a fox pelt hammered the dragon scale over the scorching furnace over and over again. At last, in the burning flames, the blade was reborn.\u003c/color\u003e",
+                "isTopEquip": true,
+                "equipDescLabel": "Boosts BA damage",
+                "equipEffects": [
+                    {
+                        "effectType": 3,
+                        "valueType": 1,
+                        "value": 180
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 1,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 1350
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": [
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Devastating Blow\u003c/color\u003e\nBasic Attacks and skills deal physical damage equal to \u003ccolor=#3cb088\u003e7% {hp}\u003c/color\u003e to minions and monsters, and restore Health equal to 50% of the damage dealt (halved for ranged attacks).\n({cd}: 2s)"
+                    },
+                    {
+                        "id": 0,
+                        "name": "\u003ccolor=#ffffff\u003ePassive - Divine Power\u003c/color\u003e\nBasic Attacks and skills deal physical damage equal to \u003ccolor=#3cb088\u003e3.5% {hp}\u003c/color\u003e to enemy heroes and towers (half for ranged attacks).\n({cd}: 2s)"
+                    }
+                ]
+            },
+            {
+                "equipId": 1317,
+                "equipName": "Cuirass of Swiftness",
+                "equipIcon": "https://camp.honorofkings.com/social/game/BattleEquip/1317.png",
+                "preEquipIds": [
+                    1311,
+                    1218
+                ],
+                "equipDesc": "HP +450, CDR +7.5%",
+                "equipPrice": 800,
+                "equipType": 3,
+                "equipLevel": 2,
+                "equipShowId": 89,
+                "equipNarrativeDesc": "",
+                "isTopEquip": false,
+                "equipDescLabel": "",
+                "equipEffects": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 75000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 1,
+                        "value": 450
+                    }
+                ],
+                "equipSkills": [],
+                "passiveSkills": []
+            }
+        ]
+    }
+}

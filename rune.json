@@ -1,0 +1,3178 @@
+{
+    "code": 0,
+    "msg": "",
+    "data": {
+        "list": [
+            {
+                "runeId": 9121,
+                "runeName": "Lvl 1: Bulwark",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9121.png",
+                "runeCommonIcon": 5001,
+                "runeLevel": 1,
+                "runeDesc": "Physical Defense +1.7",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 170
+                    }
+                ]
+            },
+            {
+                "runeId": 9205,
+                "runeName": "Lvl 2: Fate",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9205.png",
+                "runeCommonIcon": 5025,
+                "runeLevel": 2,
+                "runeDesc": "Attack Speed +0.3%\nMax Health +10.5\nPhysical Defense +0.7",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1050
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 70
+                    }
+                ]
+            },
+            {
+                "runeId": 9225,
+                "runeName": "Lvl 2: Reverence",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9225.png",
+                "runeCommonIcon": 5009,
+                "runeLevel": 2,
+                "runeDesc": "Magical Lifesteal +0.2%\nPhysical Defense +1.8",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 180
+                    }
+                ]
+            },
+            {
+                "runeId": 3201,
+                "runeName": "Lvl 2: Bulwark",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3201.png",
+                "runeCommonIcon": 5001,
+                "runeLevel": 2,
+                "runeDesc": "Physical Defense +2.8",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 280
+                    }
+                ]
+            },
+            {
+                "runeId": 9125,
+                "runeName": "Lvl 1: Tribute",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9125.png",
+                "runeCommonIcon": 5022,
+                "runeLevel": 1,
+                "runeDesc": "Magical Attack +0.5\nCooldown Reduction +0.1%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 3,
+                        "value": 1000
+                    }
+                ]
+            },
+            {
+                "runeId": 9304,
+                "runeName": "Lvl 3: Calamity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9304.png",
+                "runeCommonIcon": 5008,
+                "runeLevel": 3,
+                "runeDesc": "Critical Rate +0.7%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 7000
+                    }
+                ]
+            },
+            {
+                "runeId": 3307,
+                "runeName": "Lvl 3: Bulwark",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3307.png",
+                "runeCommonIcon": 5001,
+                "runeLevel": 3,
+                "runeDesc": "Physical Defense +3.7",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 370
+                    }
+                ]
+            },
+            {
+                "runeId": 9105,
+                "runeName": "Lvl 1: Nightmare",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9105.png",
+                "runeCommonIcon": 5014,
+                "runeLevel": 1,
+                "runeDesc": "Magical Attack +0.8\nMagical Pierce +0.5",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 50
+                    }
+                ]
+            },
+            {
+                "runeId": 9301,
+                "runeName": "Lvl 3: Conflict",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9301.png",
+                "runeCommonIcon": 5005,
+                "runeLevel": 3,
+                "runeDesc": "Physical Attack +1\nPhysical Lifesteal +0.2%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 1403,
+                "runeName": "Lvl 4: Inheritance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1403.png",
+                "runeCommonIcon": 5002,
+                "runeLevel": 4,
+                "runeDesc": "Physical Attack +2",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 200
+                    }
+                ]
+            },
+            {
+                "runeId": 3401,
+                "runeName": "Lvl 4: Bulwark",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3401.png",
+                "runeCommonIcon": 5001,
+                "runeLevel": 4,
+                "runeDesc": "Physical Defense +5.6",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 560
+                    }
+                ]
+            },
+            {
+                "runeId": 9311,
+                "runeName": "Lvl 3: Longevity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9311.png",
+                "runeCommonIcon": 5030,
+                "runeLevel": 3,
+                "runeDesc": "Max Health +30.5",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 3050
+                    }
+                ]
+            },
+            {
+                "runeId": 9201,
+                "runeName": "Lvl 2: Inheritance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9201.png",
+                "runeCommonIcon": 5002,
+                "runeLevel": 2,
+                "runeDesc": "Physical Attack +1",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 100
+                    }
+                ]
+            },
+            {
+                "runeId": 9422,
+                "runeName": "Lvl 4: Reverberation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9422.png",
+                "runeCommonIcon": 5007,
+                "runeLevel": 4,
+                "runeDesc": "Physical Defense +1.7\nMagical Defense +1.7\nCooldown Reduction +0.4%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 170
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 170
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 4000
+                    }
+                ]
+            },
+            {
+                "runeId": 9216,
+                "runeName": "Lvl 2: Stealth",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9216.png",
+                "runeCommonIcon": 5028,
+                "runeLevel": 2,
+                "runeDesc": "Physical Attack +0.5\nMovement Speed +0.3%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "runeId": 1301,
+                "runeName": "Lvl 3: Inheritance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1301.png",
+                "runeCommonIcon": 5002,
+                "runeLevel": 3,
+                "runeDesc": "Physical Attack +1.3",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 130
+                    }
+                ]
+            },
+            {
+                "runeId": 3501,
+                "runeName": "Lvl 5: Bulwark",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3501.png",
+                "runeCommonIcon": 5001,
+                "runeLevel": 5,
+                "runeDesc": "Physical Defense +9",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 900
+                    }
+                ]
+            },
+            {
+                "runeId": 1101,
+                "runeName": "Lvl 1: Inheritance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1101.png",
+                "runeCommonIcon": 5002,
+                "runeLevel": 1,
+                "runeDesc": "Physical Attack +0.6",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 60
+                    }
+                ]
+            },
+            {
+                "runeId": 2401,
+                "runeName": "Lvl 4: Longevity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2401.png",
+                "runeCommonIcon": 5030,
+                "runeLevel": 4,
+                "runeDesc": "Max Health +46.9",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 4690
+                    }
+                ]
+            },
+            {
+                "runeId": 3412,
+                "runeName": "Lvl 4: Void",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3412.png",
+                "runeCommonIcon": 5026,
+                "runeLevel": 4,
+                "runeDesc": "Max Health +23.4\nCooldown Reduction +0.4%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 2340
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 4000
+                    }
+                ]
+            },
+            {
+                "runeId": 1503,
+                "runeName": "Lvl 5: Inheritance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1503.png",
+                "runeCommonIcon": 5002,
+                "runeLevel": 5,
+                "runeDesc": "Physical Attack +3.2",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 320
+                    }
+                ]
+            },
+            {
+                "runeId": 9112,
+                "runeName": "Lvl 1: Reaver",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9112.png",
+                "runeCommonIcon": 5003,
+                "runeLevel": 1,
+                "runeDesc": "Physical Lifesteal +0.3%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 2203,
+                "runeName": "Lvl 2: Reaver",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2203.png",
+                "runeCommonIcon": 5003,
+                "runeLevel": 2,
+                "runeDesc": "Physical Lifesteal +0.5%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 5000
+                    }
+                ]
+            },
+            {
+                "runeId": 2409,
+                "runeName": "Lvl 4: Prosperity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2409.png",
+                "runeCommonIcon": 5004,
+                "runeLevel": 4,
+                "runeDesc": "Physical Lifesteal +0.6%\nMagical Defense +2.6",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 6000
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 260
+                    }
+                ]
+            },
+            {
+                "runeId": 1415,
+                "runeName": "Lvl 4: Unparalleled",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1415.png",
+                "runeCommonIcon": 5021,
+                "runeLevel": 4,
+                "runeDesc": "Critical Rate +0.4%\nCritical Damage +2.3%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 4000
+                    },
+                    {
+                        "effectType": 12,
+                        "valueType": 2,
+                        "value": 23000
+                    }
+                ]
+            },
+            {
+                "runeId": 2303,
+                "runeName": "Lvl 3: Reaver",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2303.png",
+                "runeCommonIcon": 5003,
+                "runeLevel": 3,
+                "runeDesc": "Physical Lifesteal +0.7%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 7000
+                    }
+                ]
+            },
+            {
+                "runeId": 2405,
+                "runeName": "Lvl 4: Reaver",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2405.png",
+                "runeCommonIcon": 5003,
+                "runeLevel": 4,
+                "runeDesc": "Physical Lifesteal +1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 10000
+                    }
+                ]
+            },
+            {
+                "runeId": 1519,
+                "runeName": "Lvl 5: Calamity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1519.png",
+                "runeCommonIcon": 5008,
+                "runeLevel": 5,
+                "runeDesc": "Critical Rate +1.6%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 16000
+                    }
+                ]
+            },
+            {
+                "runeId": 2504,
+                "runeName": "Lvl 5: Reaver",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2504.png",
+                "runeCommonIcon": 5003,
+                "runeLevel": 5,
+                "runeDesc": "Physical Lifesteal +1.6%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 16000
+                    }
+                ]
+            },
+            {
+                "runeId": 2520,
+                "runeName": "Lvl 5: Hunt",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2520.png",
+                "runeCommonIcon": 5017,
+                "runeLevel": 5,
+                "runeDesc": "Attack Speed +1%\nMovement Speed +1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 10000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 100
+                    }
+                ]
+            },
+            {
+                "runeId": 9114,
+                "runeName": "Lvl 1: Prosperity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9114.png",
+                "runeCommonIcon": 5004,
+                "runeLevel": 1,
+                "runeDesc": "Physical Lifesteal +0.2%\nMagical Defense +0.8",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 80
+                    }
+                ]
+            },
+            {
+                "runeId": 9213,
+                "runeName": "Lvl 2: Prosperity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9213.png",
+                "runeCommonIcon": 5004,
+                "runeLevel": 2,
+                "runeDesc": "Physical Lifesteal +0.3%\nMagical Defense +1.3",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 130
+                    }
+                ]
+            },
+            {
+                "runeId": 9312,
+                "runeName": "Lvl 3: Prosperity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9312.png",
+                "runeCommonIcon": 5004,
+                "runeLevel": 3,
+                "runeDesc": "Physical Lifesteal +0.4%\nMagical Defense +1.7",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 4000
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 170
+                    }
+                ]
+            },
+            {
+                "runeId": 3306,
+                "runeName": "Lvl 3: Cognizance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3306.png",
+                "runeCommonIcon": 5012,
+                "runeLevel": 3,
+                "runeDesc": "Magical Defense +3.7",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 370
+                    }
+                ]
+            },
+            {
+                "runeId": 2511,
+                "runeName": "Lvl 5: Prosperity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2511.png",
+                "runeCommonIcon": 5004,
+                "runeLevel": 5,
+                "runeDesc": "Physical Lifesteal +1%\nMagical Defense +4.1",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 10000
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 410
+                    }
+                ]
+            },
+            {
+                "runeId": 3409,
+                "runeName": "Lvl 4: Reverence",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3409.png",
+                "runeCommonIcon": 5009,
+                "runeLevel": 4,
+                "runeDesc": "Magical Lifesteal +0.4%\nPhysical Defense +3.7",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 4000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 370
+                    }
+                ]
+            },
+            {
+                "runeId": 9102,
+                "runeName": "Lvl 1: Conflict",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9102.png",
+                "runeCommonIcon": 5005,
+                "runeLevel": 1,
+                "runeDesc": "Physical Attack +0.5\nPhysical Lifesteal +0.1%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 3,
+                        "value": 1000
+                    }
+                ]
+            },
+            {
+                "runeId": 1520,
+                "runeName": "Lvl 5: Red Moon",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1520.png",
+                "runeCommonIcon": 5006,
+                "runeLevel": 5,
+                "runeDesc": "Attack Speed +1.6%\nCritical Rate +0.5%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 16000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 5000
+                    }
+                ]
+            },
+            {
+                "runeId": 1205,
+                "runeName": "Lvl 2: Red Moon",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1205.png",
+                "runeCommonIcon": 5006,
+                "runeLevel": 2,
+                "runeDesc": "Attack Speed +0.5%\nCritical Rate +0.2%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 5000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 9206,
+                "runeName": "Lvl 2: Conflict",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9206.png",
+                "runeCommonIcon": 5005,
+                "runeLevel": 2,
+                "runeDesc": "Physical Attack +0.8\nPhysical Lifesteal +0.2%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 9402,
+                "runeName": "Lvl 4: Conflict",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9402.png",
+                "runeCommonIcon": 5005,
+                "runeLevel": 4,
+                "runeDesc": "Physical Attack +1.6\nPhysical Lifesteal +0.3%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 3202,
+                "runeName": "Lvl 2: Cognizance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3202.png",
+                "runeCommonIcon": 5012,
+                "runeLevel": 2,
+                "runeDesc": "Magical Defense +2.8",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 280
+                    }
+                ]
+            },
+            {
+                "runeId": 1505,
+                "runeName": "Lvl 5: Conflict",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1505.png",
+                "runeCommonIcon": 5005,
+                "runeLevel": 5,
+                "runeDesc": "Physical Attack +2.5\nPhysical Lifesteal +0.5%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 250
+                    },
+                    {
+                        "effectType": 9,
+                        "valueType": 2,
+                        "value": 5000
+                    }
+                ]
+            },
+            {
+                "runeId": 9115,
+                "runeName": "Lvl 1: Reincarnation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9115.png",
+                "runeCommonIcon": 5013,
+                "runeLevel": 1,
+                "runeDesc": "Magical Attack +0.5\nMagical Lifesteal +0.2%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 1103,
+                "runeName": "Lvl 1: Red Moon",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1103.png",
+                "runeCommonIcon": 5006,
+                "runeLevel": 1,
+                "runeDesc": "Attack Speed +0.3%\nCritical Rate +0.1%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 3,
+                        "value": 1000
+                    }
+                ]
+            },
+            {
+                "runeId": 9321,
+                "runeName": "Lvl 3: Fortify",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9321.png",
+                "runeCommonIcon": 5010,
+                "runeLevel": 3,
+                "runeDesc": "Physical Defense +2\nMagical Defense +2",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 200
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 200
+                    }
+                ]
+            },
+            {
+                "runeId": 3105,
+                "runeName": "Lvl 1: Compassion",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3105.png",
+                "runeCommonIcon": 5011,
+                "runeLevel": 1,
+                "runeDesc": "Cooldown Reduction +0.2%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 3514,
+                "runeName": "Lvl 5: Eagle Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3514.png",
+                "runeCommonIcon": 5029,
+                "runeLevel": 5,
+                "runeDesc": "Physical Attack +0.9\nPhysical Pierce +6.4",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 640
+                    }
+                ]
+            },
+            {
+                "runeId": 1303,
+                "runeName": "Lvl 3: Red Moon",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1303.png",
+                "runeCommonIcon": 5006,
+                "runeLevel": 3,
+                "runeDesc": "Attack Speed +0.7%\nCritical Rate +0.2%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 7000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 9224,
+                "runeName": "Lvl 2: Fortify",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9224.png",
+                "runeCommonIcon": 5010,
+                "runeLevel": 2,
+                "runeDesc": "Physical Defense +1.6\nMagical Defense +1.6",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 160
+                    }
+                ]
+            },
+            {
+                "runeId": 1408,
+                "runeName": "Lvl 4: Red Moon",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1408.png",
+                "runeCommonIcon": 5006,
+                "runeLevel": 4,
+                "runeDesc": "Attack Speed +1%\nCritical Rate +0.3%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 10000
+                    },
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 9127,
+                "runeName": "Lvl 1: Reverberation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9127.png",
+                "runeCommonIcon": 5007,
+                "runeLevel": 1,
+                "runeDesc": "Physical Defense +0.5\nMagical Defense +0.5\nCooldown Reduction +0.1%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 50
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 3,
+                        "value": 1000
+                    }
+                ]
+            },
+            {
+                "runeId": 3510,
+                "runeName": "Lvl 5: Cognizance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3510.png",
+                "runeCommonIcon": 5012,
+                "runeLevel": 5,
+                "runeDesc": "Magical Defense +9",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 900
+                    }
+                ]
+            },
+            {
+                "runeId": 9226,
+                "runeName": "Lvl 2: Reverberation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9226.png",
+                "runeCommonIcon": 5007,
+                "runeLevel": 2,
+                "runeDesc": "Physical Defense +0.8\nMagical Defense +0.8\nCooldown Reduction +0.2%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 2404,
+                "runeName": "Lvl 4: Reincarnation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2404.png",
+                "runeCommonIcon": 5013,
+                "runeLevel": 4,
+                "runeDesc": "Magical Attack +1.5\nMagical Lifesteal +0.6%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 6000
+                    }
+                ]
+            },
+            {
+                "runeId": 9324,
+                "runeName": "Lvl 3: Reverberation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9324.png",
+                "runeCommonIcon": 5007,
+                "runeLevel": 3,
+                "runeDesc": "Physical Defense +1.1\nMagical Defense +1.1\nCooldown Reduction +0.2%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 110
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 110
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 3518,
+                "runeName": "Lvl 5: Reverberation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3518.png",
+                "runeCommonIcon": 5007,
+                "runeLevel": 5,
+                "runeDesc": "Physical Defense +2.7\nMagical Defense +2.7\nCooldown Reduction +0.6%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 270
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 270
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 6000
+                    }
+                ]
+            },
+            {
+                "runeId": 9107,
+                "runeName": "Lvl 1: Calamity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9107.png",
+                "runeCommonIcon": 5008,
+                "runeLevel": 1,
+                "runeDesc": "Critical Rate +0.3%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 1203,
+                "runeName": "Lvl 2: Calamity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1203.png",
+                "runeCommonIcon": 5008,
+                "runeLevel": 2,
+                "runeDesc": "Critical Rate +0.5%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 5000
+                    }
+                ]
+            },
+            {
+                "runeId": 1414,
+                "runeName": "Lvl 4: Calamity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1414.png",
+                "runeCommonIcon": 5008,
+                "runeLevel": 4,
+                "runeDesc": "Critical Rate +1%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 10000
+                    }
+                ]
+            },
+            {
+                "runeId": 9221,
+                "runeName": "Lvl 2: Compassion",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9221.png",
+                "runeCommonIcon": 5011,
+                "runeLevel": 2,
+                "runeDesc": "Cooldown Reduction +0.3%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 3414,
+                "runeName": "Lvl 4: Eagle Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3414.png",
+                "runeCommonIcon": 5029,
+                "runeLevel": 4,
+                "runeDesc": "Physical Attack +0.6\nPhysical Pierce +4",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 60
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 400
+                    }
+                ]
+            },
+            {
+                "runeId": 9126,
+                "runeName": "Lvl 1: Reverence",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9126.png",
+                "runeCommonIcon": 5009,
+                "runeLevel": 1,
+                "runeDesc": "Magical Lifesteal +0.1%\nPhysical Defense +1.1",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 3,
+                        "value": 1000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 110
+                    }
+                ]
+            },
+            {
+                "runeId": 9323,
+                "runeName": "Lvl 3: Reverence",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9323.png",
+                "runeCommonIcon": 5009,
+                "runeLevel": 3,
+                "runeDesc": "Magical Lifesteal +0.3%\nPhysical Defense +2.4",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 240
+                    }
+                ]
+            },
+            {
+                "runeId": 3517,
+                "runeName": "Lvl 5: Reverence",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3517.png",
+                "runeCommonIcon": 5009,
+                "runeLevel": 5,
+                "runeDesc": "Magical Lifesteal +0.7%\nPhysical Defense +5.9",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 7000
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 590
+                    }
+                ]
+            },
+            {
+                "runeId": 2512,
+                "runeName": "Lvl 5: Reincarnation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2512.png",
+                "runeCommonIcon": 5013,
+                "runeLevel": 5,
+                "runeDesc": "Magical Attack +2.4\nMagical Lifesteal +1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 240
+                    },
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 10000
+                    }
+                ]
+            },
+            {
+                "runeId": 9122,
+                "runeName": "Lvl 1: Fortify",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9122.png",
+                "runeCommonIcon": 5010,
+                "runeLevel": 1,
+                "runeDesc": "Physical Defense +0.9\nMagical Defense +0.9",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 90
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 90
+                    }
+                ]
+            },
+            {
+                "runeId": 3405,
+                "runeName": "Lvl 4: Fortify",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3405.png",
+                "runeCommonIcon": 5010,
+                "runeLevel": 4,
+                "runeDesc": "Physical Defense +3.1\nMagical Defense +3.1",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 310
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 310
+                    }
+                ]
+            },
+            {
+                "runeId": 3503,
+                "runeName": "Lvl 5: Fortify",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3503.png",
+                "runeCommonIcon": 5010,
+                "runeLevel": 5,
+                "runeDesc": "Physical Defense +5\nMagical Defense +5",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 500
+                    },
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 500
+                    }
+                ]
+            },
+            {
+                "runeId": 9322,
+                "runeName": "Lvl 3: Compassion",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9322.png",
+                "runeCommonIcon": 5011,
+                "runeLevel": 3,
+                "runeDesc": "Cooldown Reduction +0.4%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 4000
+                    }
+                ]
+            },
+            {
+                "runeId": 2105,
+                "runeName": "Lvl 1: Hunt",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2105.png",
+                "runeCommonIcon": 5017,
+                "runeLevel": 1,
+                "runeDesc": "Attack Speed +0.2%\nMovement Speed +0.2%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 20
+                    }
+                ]
+            },
+            {
+                "runeId": 9421,
+                "runeName": "Lvl 4: Compassion",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9421.png",
+                "runeCommonIcon": 5011,
+                "runeLevel": 4,
+                "runeDesc": "Cooldown Reduction +0.6%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 6000
+                    }
+                ]
+            },
+            {
+                "runeId": 2204,
+                "runeName": "Lvl 2: Reincarnation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2204.png",
+                "runeCommonIcon": 5013,
+                "runeLevel": 2,
+                "runeDesc": "Magical Attack +0.8\nMagical Lifesteal +0.3%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 3516,
+                "runeName": "Lvl 5: Compassion",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3516.png",
+                "runeCommonIcon": 5011,
+                "runeLevel": 5,
+                "runeDesc": "Cooldown Reduction +1%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 10000
+                    }
+                ]
+            },
+            {
+                "runeId": 2406,
+                "runeName": "Lvl 4: Beast Scar",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2406.png",
+                "runeCommonIcon": 5018,
+                "runeLevel": 4,
+                "runeDesc": "Critical Rate +0.3%\nMax Health +37.5",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 3750
+                    }
+                ]
+            },
+            {
+                "runeId": 9124,
+                "runeName": "Lvl 1: Cognizance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9124.png",
+                "runeCommonIcon": 5012,
+                "runeLevel": 1,
+                "runeDesc": "Magical Defense +1.7",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 170
+                    }
+                ]
+            },
+            {
+                "runeId": 3402,
+                "runeName": "Lvl 4: Cognizance",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3402.png",
+                "runeCommonIcon": 5012,
+                "runeLevel": 4,
+                "runeDesc": "Magical Defense +5.6",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 4,
+                        "valueType": 3,
+                        "value": 560
+                    }
+                ]
+            },
+            {
+                "runeId": 2307,
+                "runeName": "Lvl 3: Reincarnation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2307.png",
+                "runeCommonIcon": 5013,
+                "runeLevel": 3,
+                "runeDesc": "Magical Attack +1\nMagical Lifesteal +0.4%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 4000
+                    }
+                ]
+            },
+            {
+                "runeId": 9303,
+                "runeName": "Lvl 3: Omen",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9303.png",
+                "runeCommonIcon": 5024,
+                "runeLevel": 3,
+                "runeDesc": "Magical Attack +1.7\nAttack Speed +0.2%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 170
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 9203,
+                "runeName": "Lvl 2: Nightmare",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9203.png",
+                "runeCommonIcon": 5014,
+                "runeLevel": 2,
+                "runeDesc": "Magical Attack +1.3\nMagical Pierce +0.8",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 130
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 80
+                    }
+                ]
+            },
+            {
+                "runeId": 1308,
+                "runeName": "Lvl 3: Nightmare",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1308.png",
+                "runeCommonIcon": 5014,
+                "runeLevel": 3,
+                "runeDesc": "Magical Attack +1.7\nMagical Pierce +1",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 170
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 100
+                    }
+                ]
+            },
+            {
+                "runeId": 1412,
+                "runeName": "Lvl 4: Nightmare",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1412.png",
+                "runeCommonIcon": 5014,
+                "runeLevel": 4,
+                "runeDesc": "Magical Attack +2.6\nMagical Pierce +1.5",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 260
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 150
+                    }
+                ]
+            },
+            {
+                "runeId": 2403,
+                "runeName": "Lvl 4: Meditation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2403.png",
+                "runeCommonIcon": 5015,
+                "runeLevel": 4,
+                "runeDesc": "Max Health +37.5\nHealth Recovery +2.8",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 3750
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 280
+                    }
+                ]
+            },
+            {
+                "runeId": 1514,
+                "runeName": "Lvl 5: Nightmare",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1514.png",
+                "runeCommonIcon": 5014,
+                "runeLevel": 5,
+                "runeDesc": "Magical Attack +4.2\nMagical Pierce +2.4",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 420
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 240
+                    }
+                ]
+            },
+            {
+                "runeId": 2102,
+                "runeName": "Lvl 1: Meditation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2102.png",
+                "runeCommonIcon": 5015,
+                "runeLevel": 1,
+                "runeDesc": "Max Health +11.3\nHealth Recovery +0.8",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1130
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 80
+                    }
+                ]
+            },
+            {
+                "runeId": 2202,
+                "runeName": "Lvl 2: Meditation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2202.png",
+                "runeCommonIcon": 5015,
+                "runeLevel": 2,
+                "runeDesc": "Max Health +18.8\nHealth Recovery +1.4",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1880
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 140
+                    }
+                ]
+            },
+            {
+                "runeId": 2308,
+                "runeName": "Lvl 3: Meditation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2308.png",
+                "runeCommonIcon": 5015,
+                "runeLevel": 3,
+                "runeDesc": "Max Health +24.4\nHealth Recovery +1.8",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 2440
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 180
+                    }
+                ]
+            },
+            {
+                "runeId": 2510,
+                "runeName": "Lvl 5: Meditation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2510.png",
+                "runeCommonIcon": 5015,
+                "runeLevel": 5,
+                "runeDesc": "Max Health +60\nHealth Recovery +4.5",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 6000
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 450
+                    }
+                ]
+            },
+            {
+                "runeId": 1102,
+                "runeName": "Lvl 1: Saint",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1102.png",
+                "runeCommonIcon": 5016,
+                "runeLevel": 1,
+                "runeDesc": "Magical Attack +1",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 100
+                    }
+                ]
+            },
+            {
+                "runeId": 9202,
+                "runeName": "Lvl 2: Saint",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9202.png",
+                "runeCommonIcon": 5016,
+                "runeLevel": 2,
+                "runeDesc": "Magical Attack +1.7",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 170
+                    }
+                ]
+            },
+            {
+                "runeId": 1302,
+                "runeName": "Lvl 3: Saint",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1302.png",
+                "runeCommonIcon": 5016,
+                "runeLevel": 3,
+                "runeDesc": "Magical Attack +2.2",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 220
+                    }
+                ]
+            },
+            {
+                "runeId": 9401,
+                "runeName": "Lvl 4: Saint",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9401.png",
+                "runeCommonIcon": 5016,
+                "runeLevel": 4,
+                "runeDesc": "Magical Attack +3.3",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 330
+                    }
+                ]
+            },
+            {
+                "runeId": 1501,
+                "runeName": "Lvl 5: Saint",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1501.png",
+                "runeCommonIcon": 5016,
+                "runeLevel": 5,
+                "runeDesc": "Magical Attack +5.3",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 530
+                    }
+                ]
+            },
+            {
+                "runeId": 9211,
+                "runeName": "Lvl 2: Hunt",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9211.png",
+                "runeCommonIcon": 5017,
+                "runeLevel": 2,
+                "runeDesc": "Attack Speed +0.3%\nMovement Speed +0.3%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "runeId": 2310,
+                "runeName": "Lvl 3: Hunt",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2310.png",
+                "runeCommonIcon": 5017,
+                "runeLevel": 3,
+                "runeDesc": "Attack Speed +0.4%\nMovement Speed +0.4%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 4000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 40
+                    }
+                ]
+            },
+            {
+                "runeId": 2412,
+                "runeName": "Lvl 4: Hunt",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2412.png",
+                "runeCommonIcon": 5017,
+                "runeLevel": 4,
+                "runeDesc": "Attack Speed +0.6%\nMovement Speed +0.6%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 6000
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 60
+                    }
+                ]
+            },
+            {
+                "runeId": 9113,
+                "runeName": "Lvl 1: Beast Scar",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9113.png",
+                "runeCommonIcon": 5018,
+                "runeLevel": 1,
+                "runeDesc": "Critical Rate +0.1%\nMax Health +11.3",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 3,
+                        "value": 1000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1130
+                    }
+                ]
+            },
+            {
+                "runeId": 9212,
+                "runeName": "Lvl 2: Beast Scar",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9212.png",
+                "runeCommonIcon": 5018,
+                "runeLevel": 2,
+                "runeDesc": "Critical Rate +0.2%\nMax Health +18.8",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1880
+                    }
+                ]
+            },
+            {
+                "runeId": 2305,
+                "runeName": "Lvl 3: Beast Scar",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2305.png",
+                "runeCommonIcon": 5018,
+                "runeLevel": 3,
+                "runeDesc": "Critical Rate +0.2%\nMax Health +24.4",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 2440
+                    }
+                ]
+            },
+            {
+                "runeId": 2506,
+                "runeName": "Lvl 5: Beast Scar",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2506.png",
+                "runeCommonIcon": 5018,
+                "runeLevel": 5,
+                "runeDesc": "Critical Rate +0.5%\nMax Health +60",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 5000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 6000
+                    }
+                ]
+            },
+            {
+                "runeId": 9111,
+                "runeName": "Lvl 1: Avarice",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9111.png",
+                "runeCommonIcon": 5019,
+                "runeLevel": 1,
+                "runeDesc": "Magical Lifesteal +0.3%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 9215,
+                "runeName": "Lvl 2: Avarice",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9215.png",
+                "runeCommonIcon": 5019,
+                "runeLevel": 2,
+                "runeDesc": "Magical Lifesteal +0.5%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 5000
+                    }
+                ]
+            },
+            {
+                "runeId": 2304,
+                "runeName": "Lvl 3: Avarice",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2304.png",
+                "runeCommonIcon": 5019,
+                "runeLevel": 3,
+                "runeDesc": "Magical Lifesteal +0.7%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 7000
+                    }
+                ]
+            },
+            {
+                "runeId": 9411,
+                "runeName": "Lvl 4: Avarice",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9411.png",
+                "runeCommonIcon": 5019,
+                "runeLevel": 4,
+                "runeDesc": "Magical Lifesteal +1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 10000
+                    }
+                ]
+            },
+            {
+                "runeId": 2503,
+                "runeName": "Lvl 5: Avarice",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2503.png",
+                "runeCommonIcon": 5019,
+                "runeLevel": 5,
+                "runeDesc": "Magical Lifesteal +1.6%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 10,
+                        "valueType": 2,
+                        "value": 16000
+                    }
+                ]
+            },
+            {
+                "runeId": 9116,
+                "runeName": "Lvl 1: Harmony",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9116.png",
+                "runeCommonIcon": 5020,
+                "runeLevel": 1,
+                "runeDesc": "Max Health +8.4\nHealth Recovery +1\nMovement Speed +0.1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 840
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 10
+                    }
+                ]
+            },
+            {
+                "runeId": 9214,
+                "runeName": "Lvl 2: Harmony",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9214.png",
+                "runeCommonIcon": 5020,
+                "runeLevel": 2,
+                "runeDesc": "Max Health +14.1\nHealth Recovery +1.6\nMovement Speed +0.1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1410
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 10
+                    }
+                ]
+            },
+            {
+                "runeId": 9313,
+                "runeName": "Lvl 3: Harmony",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9313.png",
+                "runeCommonIcon": 5020,
+                "runeLevel": 3,
+                "runeDesc": "Max Health +18.3\nHealth Recovery +2.1\nMovement Speed +0.2%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1830
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 210
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 20
+                    }
+                ]
+            },
+            {
+                "runeId": 2402,
+                "runeName": "Lvl 4: Harmony",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2402.png",
+                "runeCommonIcon": 5020,
+                "runeLevel": 4,
+                "runeDesc": "Max Health +28.1\nHealth Recovery +3.3\nMovement Speed +0.3%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 2810
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 330
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "runeId": 9117,
+                "runeName": "Lvl 1: Stealth",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9117.png",
+                "runeCommonIcon": 5028,
+                "runeLevel": 1,
+                "runeDesc": "Physical Attack +0.3\nMovement Speed +0.2%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 30
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 20
+                    }
+                ]
+            },
+            {
+                "runeId": 2515,
+                "runeName": "Lvl 5: Harmony",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2515.png",
+                "runeCommonIcon": 5020,
+                "runeLevel": 5,
+                "runeDesc": "Max Health +45\nHealth Recovery +5.2\nMovement Speed +0.4%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 4500
+                    },
+                    {
+                        "effectType": 16,
+                        "valueType": 3,
+                        "value": 520
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 40
+                    }
+                ]
+            },
+            {
+                "runeId": 1410,
+                "runeName": "Lvl 4: Omen",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1410.png",
+                "runeCommonIcon": 5024,
+                "runeLevel": 4,
+                "runeDesc": "Magical Attack +2.6\nAttack Speed +0.4%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 260
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 4000
+                    }
+                ]
+            },
+            {
+                "runeId": 9103,
+                "runeName": "Lvl 1: Unparalleled",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9103.png",
+                "runeCommonIcon": 5021,
+                "runeLevel": 1,
+                "runeDesc": "Critical Rate +0.1%\nCritical Damage +0.7%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 3,
+                        "value": 1000
+                    },
+                    {
+                        "effectType": 12,
+                        "valueType": 2,
+                        "value": 7000
+                    }
+                ]
+            },
+            {
+                "runeId": 9204,
+                "runeName": "Lvl 2: Unparalleled",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9204.png",
+                "runeCommonIcon": 5021,
+                "runeLevel": 2,
+                "runeDesc": "Critical Rate +0.2%\nCritical Damage +1.1%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 12,
+                        "valueType": 2,
+                        "value": 11000
+                    }
+                ]
+            },
+            {
+                "runeId": 1307,
+                "runeName": "Lvl 3: Unparalleled",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1307.png",
+                "runeCommonIcon": 5021,
+                "runeLevel": 3,
+                "runeDesc": "Critical Rate +0.3%\nCritical Damage +1.5%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 3000
+                    },
+                    {
+                        "effectType": 12,
+                        "valueType": 2,
+                        "value": 15000
+                    }
+                ]
+            },
+            {
+                "runeId": 1510,
+                "runeName": "Lvl 5: Unparalleled",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1510.png",
+                "runeCommonIcon": 5021,
+                "runeLevel": 5,
+                "runeDesc": "Critical Rate +0.7%\nCritical Damage +3.6%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 6,
+                        "valueType": 2,
+                        "value": 7000
+                    },
+                    {
+                        "effectType": 12,
+                        "valueType": 2,
+                        "value": 36000
+                    }
+                ]
+            },
+            {
+                "runeId": 9223,
+                "runeName": "Lvl 2: Tribute",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9223.png",
+                "runeCommonIcon": 5022,
+                "runeLevel": 2,
+                "runeDesc": "Magical Attack +0.8\nCooldown Reduction +0.2%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 3308,
+                "runeName": "Lvl 3: Tribute",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3308.png",
+                "runeCommonIcon": 5022,
+                "runeLevel": 3,
+                "runeDesc": "Magical Attack +1\nCooldown Reduction +0.3%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 3000
+                    }
+                ]
+            },
+            {
+                "runeId": 3403,
+                "runeName": "Lvl 4: Tribute",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3403.png",
+                "runeCommonIcon": 5022,
+                "runeLevel": 4,
+                "runeDesc": "Magical Attack +1.5\nCooldown Reduction +0.4%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 150
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 4000
+                    }
+                ]
+            },
+            {
+                "runeId": 3511,
+                "runeName": "Lvl 5: Tribute",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3511.png",
+                "runeCommonIcon": 5022,
+                "runeLevel": 5,
+                "runeDesc": "Magical Attack +2.4\nCooldown Reduction +0.7%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 240
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 7000
+                    }
+                ]
+            },
+            {
+                "runeId": 3104,
+                "runeName": "Lvl 1: Mind's Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3104.png",
+                "runeCommonIcon": 5023,
+                "runeLevel": 1,
+                "runeDesc": "Attack Speed +0.1%\nMagical Pierce +1.2",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 3,
+                        "value": 1000
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 120
+                    }
+                ]
+            },
+            {
+                "runeId": 3205,
+                "runeName": "Lvl 2: Mind's Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3205.png",
+                "runeCommonIcon": 5023,
+                "runeLevel": 2,
+                "runeDesc": "Attack Speed +0.2%\nMagical Pierce +2",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 200
+                    }
+                ]
+            },
+            {
+                "runeId": 3304,
+                "runeName": "Lvl 3: Mind's Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3304.png",
+                "runeCommonIcon": 5023,
+                "runeLevel": 3,
+                "runeDesc": "Attack Speed +0.2%\nMagical Pierce +2.6",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 260
+                    }
+                ]
+            },
+            {
+                "runeId": 3411,
+                "runeName": "Lvl 4: Mind's Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3411.png",
+                "runeCommonIcon": 5023,
+                "runeLevel": 4,
+                "runeDesc": "Attack Speed +0.4%\nMagical Pierce +4",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 4000
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 400
+                    }
+                ]
+            },
+            {
+                "runeId": 3515,
+                "runeName": "Lvl 5: Mind's Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3515.png",
+                "runeCommonIcon": 5023,
+                "runeLevel": 5,
+                "runeDesc": "Attack Speed +0.6%\nMagical Pierce +6.4",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 6000
+                    },
+                    {
+                        "effectType": 8,
+                        "valueType": 3,
+                        "value": 640
+                    }
+                ]
+            },
+            {
+                "runeId": 9106,
+                "runeName": "Lvl 1: Omen",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9106.png",
+                "runeCommonIcon": 5024,
+                "runeLevel": 1,
+                "runeDesc": "Magical Attack +0.8\nAttack Speed +0.1%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 3,
+                        "value": 1000
+                    }
+                ]
+            },
+            {
+                "runeId": 1204,
+                "runeName": "Lvl 2: Omen",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1204.png",
+                "runeCommonIcon": 5024,
+                "runeLevel": 2,
+                "runeDesc": "Magical Attack +1.3\nAttack Speed +0.2%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 130
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 1517,
+                "runeName": "Lvl 5: Omen",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1517.png",
+                "runeCommonIcon": 5024,
+                "runeLevel": 5,
+                "runeDesc": "Magical Attack +4.2\nAttack Speed +0.6%",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 2,
+                        "valueType": 3,
+                        "value": 420
+                    },
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 6000
+                    }
+                ]
+            },
+            {
+                "runeId": 9104,
+                "runeName": "Lvl 1: Fate",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9104.png",
+                "runeCommonIcon": 5025,
+                "runeLevel": 1,
+                "runeDesc": "Attack Speed +0.2%\nMax Health +6.3\nPhysical Defense +0.4",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 2000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 630
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 40
+                    }
+                ]
+            },
+            {
+                "runeId": 9302,
+                "runeName": "Lvl 3: Fate",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9302.png",
+                "runeCommonIcon": 5025,
+                "runeLevel": 3,
+                "runeDesc": "Attack Speed +0.4%\nMax Health +13.7\nPhysical Defense +0.9",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 4000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1370
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 90
+                    }
+                ]
+            },
+            {
+                "runeId": 1405,
+                "runeName": "Lvl 4: Fate",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1405.png",
+                "runeCommonIcon": 5025,
+                "runeLevel": 4,
+                "runeDesc": "Attack Speed +0.6%\nMax Health +21.1\nPhysical Defense +1.4",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 6000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 2110
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 140
+                    }
+                ]
+            },
+            {
+                "runeId": 1512,
+                "runeName": "Lvl 5: Fate",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1512.png",
+                "runeCommonIcon": 5025,
+                "runeLevel": 5,
+                "runeDesc": "Attack Speed +1%\nMax Health +33.7\nPhysical Defense +2.3",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 18,
+                        "valueType": 2,
+                        "value": 10000
+                    },
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 3370
+                    },
+                    {
+                        "effectType": 3,
+                        "valueType": 3,
+                        "value": 230
+                    }
+                ]
+            },
+            {
+                "runeId": 9123,
+                "runeName": "Lvl 1: Void",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9123.png",
+                "runeCommonIcon": 5026,
+                "runeLevel": 1,
+                "runeDesc": "Max Health +7\nCooldow Reduction +0.1%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 700
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 3,
+                        "value": 1000
+                    }
+                ]
+            },
+            {
+                "runeId": 9222,
+                "runeName": "Lvl 2: Void",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9222.png",
+                "runeCommonIcon": 5026,
+                "runeLevel": 2,
+                "runeDesc": "Max Health +11.7\nCooldown Reduction +0.2%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1170
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 3310,
+                "runeName": "Lvl 3: Void",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3310.png",
+                "runeCommonIcon": 5026,
+                "runeLevel": 3,
+                "runeDesc": "Max Health +15.2\nCooldown Reduction +0.2%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1520
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 2000
+                    }
+                ]
+            },
+            {
+                "runeId": 3509,
+                "runeName": "Lvl 5: Void",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3509.png",
+                "runeCommonIcon": 5026,
+                "runeLevel": 5,
+                "runeDesc": "Max Health +37.5\nCooldown Reduction +0.6%",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 3750
+                    },
+                    {
+                        "effectType": 19,
+                        "valueType": 2,
+                        "value": 6000
+                    }
+                ]
+            },
+            {
+                "runeId": 9101,
+                "runeName": "Lvl 1: Mutation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9101.png",
+                "runeCommonIcon": 5027,
+                "runeLevel": 1,
+                "runeDesc": "Physical Attack +0.4\nPhysical Pierce +0.7",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 40
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 70
+                    }
+                ]
+            },
+            {
+                "runeId": 1201,
+                "runeName": "Lvl 2: Mutation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1201.png",
+                "runeCommonIcon": 5027,
+                "runeLevel": 2,
+                "runeDesc": "Physical Attack +0.6\nPhysical Pierce +1.1",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 60
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 110
+                    }
+                ]
+            },
+            {
+                "runeId": 1305,
+                "runeName": "Lvl 3: Mutation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1305.png",
+                "runeCommonIcon": 5027,
+                "runeLevel": 3,
+                "runeDesc": "Physical Attack +0.8\nPhysical Pierce +1.5",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 80
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 150
+                    }
+                ]
+            },
+            {
+                "runeId": 1407,
+                "runeName": "Lvl 4: Mutation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1407.png",
+                "runeCommonIcon": 5027,
+                "runeLevel": 4,
+                "runeDesc": "Physical Attack +1.3\nPhysical Pierce +2.3",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 130
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 230
+                    }
+                ]
+            },
+            {
+                "runeId": 1504,
+                "runeName": "Lvl 5: Mutation",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/1504.png",
+                "runeCommonIcon": 5027,
+                "runeLevel": 5,
+                "runeDesc": "Physical Attack +2\nPhysical Pierce +3.6",
+                "runeColor": 1,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 200
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 360
+                    }
+                ]
+            },
+            {
+                "runeId": 9314,
+                "runeName": "Lvl 3: Stealth",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9314.png",
+                "runeCommonIcon": 5028,
+                "runeLevel": 3,
+                "runeDesc": "Physical Attack +0.7\nMovement Speed +0.4%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 70
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 40
+                    }
+                ]
+            },
+            {
+                "runeId": 9412,
+                "runeName": "Lvl 4: Stealth",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/9412.png",
+                "runeCommonIcon": 5028,
+                "runeLevel": 4,
+                "runeDesc": "Physical Attack +1\nMovement Speed +0.6%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 100
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 60
+                    }
+                ]
+            },
+            {
+                "runeId": 2517,
+                "runeName": "Lvl 5: Stealth",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2517.png",
+                "runeCommonIcon": 5028,
+                "runeLevel": 5,
+                "runeDesc": "Physical Attack +1.6\nMovement Speed +1%",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 160
+                    },
+                    {
+                        "effectType": 15,
+                        "valueType": 4,
+                        "value": 100
+                    }
+                ]
+            },
+            {
+                "runeId": 3103,
+                "runeName": "Lvl 1: Eagle Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3103.png",
+                "runeCommonIcon": 5029,
+                "runeLevel": 1,
+                "runeDesc": "Physical Attack +0.2\nPhysical Pierce +1.2",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 20
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 120
+                    }
+                ]
+            },
+            {
+                "runeId": 3204,
+                "runeName": "Lvl 2: Eagle Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3204.png",
+                "runeCommonIcon": 5029,
+                "runeLevel": 2,
+                "runeDesc": "Physical Attack +0.3\nPhysical Pierce +2",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 30
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 200
+                    }
+                ]
+            },
+            {
+                "runeId": 3303,
+                "runeName": "Lvl 3: Eagle Eye",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/3303.png",
+                "runeCommonIcon": 5029,
+                "runeLevel": 3,
+                "runeDesc": "Physical Attack +0.4\nPhysical Pierce +2.6",
+                "runeColor": 3,
+                "runeEffect": [
+                    {
+                        "effectType": 1,
+                        "valueType": 3,
+                        "value": 40
+                    },
+                    {
+                        "effectType": 7,
+                        "valueType": 3,
+                        "value": 260
+                    }
+                ]
+            },
+            {
+                "runeId": 2101,
+                "runeName": "Lvl 1: Longevity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2101.png",
+                "runeCommonIcon": 5030,
+                "runeLevel": 1,
+                "runeDesc": "Max Health +14.1",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 1410
+                    }
+                ]
+            },
+            {
+                "runeId": 2201,
+                "runeName": "Lvl 2: Longevity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2201.png",
+                "runeCommonIcon": 5030,
+                "runeLevel": 2,
+                "runeDesc": "Max Health +23.4",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 2340
+                    }
+                ]
+            },
+            {
+                "runeId": 2501,
+                "runeName": "Lvl 5: Longevity",
+                "runeIcon": "https://res.sgameglobal.com/social/game/Symbol/2501.png",
+                "runeCommonIcon": 5030,
+                "runeLevel": 5,
+                "runeDesc": "Max Health +75",
+                "runeColor": 2,
+                "runeEffect": [
+                    {
+                        "effectType": 5,
+                        "valueType": 3,
+                        "value": 7500
+                    }
+                ]
+            }
+        ],
+        "depotList": [
+            {
+                "runeId": 9212,
+                "runeNum": 1
+            },
+            {
+                "runeId": 3509,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2520,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3515,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2515,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1514,
+                "runeNum": 20
+            },
+            {
+                "runeId": 3514,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2504,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1520,
+                "runeNum": 16
+            },
+            {
+                "runeId": 2517,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2405,
+                "runeNum": 5
+            },
+            {
+                "runeId": 9123,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1512,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1504,
+                "runeNum": 12
+            },
+            {
+                "runeId": 3104,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3501,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1505,
+                "runeNum": 10
+            },
+            {
+                "runeId": 9116,
+                "runeNum": 10
+            },
+            {
+                "runeId": 9111,
+                "runeNum": 2
+            },
+            {
+                "runeId": 2305,
+                "runeNum": 7
+            },
+            {
+                "runeId": 2501,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1503,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1517,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2512,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2503,
+                "runeNum": 8
+            },
+            {
+                "runeId": 9124,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3516,
+                "runeNum": 10
+            },
+            {
+                "runeId": 9122,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3511,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1519,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3517,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1501,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2506,
+                "runeNum": 2
+            },
+            {
+                "runeId": 2510,
+                "runeNum": 10
+            },
+            {
+                "runeId": 9112,
+                "runeNum": 5
+            },
+            {
+                "runeId": 1510,
+                "runeNum": 10
+            },
+            {
+                "runeId": 2511,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3414,
+                "runeNum": 10
+            },
+            {
+                "runeId": 1407,
+                "runeNum": 8
+            },
+            {
+                "runeId": 1408,
+                "runeNum": 4
+            },
+            {
+                "runeId": 2412,
+                "runeNum": 10
+            },
+            {
+                "runeId": 3518,
+                "runeNum": 10
+            }
+        ]
+    }
+}
